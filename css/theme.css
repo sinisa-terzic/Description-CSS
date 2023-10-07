@@ -1,0 +1,113 @@
+/*  ===  STYLE DARK  ===
+******************************************************* */
+:root {
+
+    /* BACKGROUND */
+    --bgPrimary: #000;
+    --bgSecondary: #13131a;
+    --bgTertiary: #1c1c24;
+
+    /* COLOR */
+    --textPrimary: #818af9;
+    --textSecondary: rgba(198 196 196 / 90%);
+    --textSecondaryHover: #f7ecb5;
+    --textTertiary: #f4f2fe;
+    --subtitle: #ffc6b4;
+
+    /* COLOR FOR SUBTITLE */
+    --layout: #ff79bc;
+    --element: #3ea6ff;
+    --box-model: #20c997;
+
+    /* SETTING AND SCROLL BUTTON */
+    --technicalButton: var(--textPrimary);
+
+    /* FOR SCROLL */
+    --scroll-track: #282833;
+    --scroll-thumb: #13131a;
+    --scroll-hover: #676767;
+
+}
+
+
+/*  ===  STYLE LIGHT  ===
+******************************************************* */
+.light-mode {
+
+    /* BACKGROUND */
+    --bgPrimary: #e4e5f1;
+    --bgSecondary: #fafafa;
+    --bgTertiary: #fff;
+
+    /* COLOR */
+    --textPrimary: #39499e;
+    --textSecondary: #1c1a26;
+    --textSecondaryHover: #aa0055;
+    --textTertiary: #1c1a26;
+    --subtitle: #9024a2;
+
+    /* COLOR FOR SUBTITLE */
+    --layout: #df0070;
+    --element: #0072d4;
+    --box-model: #00835c;
+
+    /* SETTING AND SCROLL BUTTON */
+    --technicalButton: var(--textPrimary);
+
+    /* FOR SCROLL */
+    --scroll-track: #efefef;
+    --scroll-thumb: #dbdbdb;
+    --scroll-hover: #676767;
+
+}
+
+
+/*  ===  STYLE COLOR DEFAULT  ===
+******************************************************* */
+/* color for Subtitle */
+.layout-color {
+    fill: var(--layout);
+    color: var(--layout);
+}
+
+.element-color {
+    fill: var(--element);
+    color: var(--element);
+}
+
+.box-model-color {
+    fill: var(--box-model);
+    color: var(--box-model);
+}
+
+
+/*  ===  STYLE POINTER / PROPERTY / VALUE  ===
+******************************************************* */
+.hand {
+    color: #ff865f;
+}
+
+.comment {
+    color: #90A4AE;
+}
+
+.selector {
+    color: #00ffff;
+}
+
+.property {
+    color: #FFCCBC;
+    margin-left: 3rem;
+}
+
+.tag {
+    color: #28dbff;
+}
+
+.attributes {
+    color: #A5D6A7;
+}
+
+.attributes-value {
+    color: #f7ecb5;
+}

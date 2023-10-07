@@ -1,0 +1,188 @@
+/*  ===  CHOOSE FONT  ===
+******************************************************* */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap');
+
+
+/*  ===  HTML AND BODY  ===
+******************************************************* */
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* 10px / 16px = 0.625 = 62.5% - font-size: 10px; */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+}
+
+
+/*  ===  LIST  ===
+******************************************************* */
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    gap: 0.8vh;
+}
+
+.list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    line-height: 1.2;
+    font-size: 0.95vw;
+}
+
+
+/*  ===  LINK  ===
+******************************************************* */
+.link {
+    padding: 0.2rem 0 0.2rem 0.6rem;
+    border-left: 1px solid transparent;
+}
+
+.link:link,
+.link:visited {
+    display: inline-block;
+    width: 100%;
+    color: rgb(255 255 255 / 80%);
+    text-decoration: none;
+    transition: all 0.1s;
+}
+
+.light-mode .link:link,
+.light-mode .link:visited {
+    color: #000;
+}
+
+.link:hover,
+.link:active {
+    color: #f7ecb5;
+}
+
+.link.active {
+    background-color: rgb(84 33 187 / 50%);
+    width: 100%;
+    padding: 1rem 0 1rem 1.5rem;
+    color: #f7ecb5;
+    border-left: 1px solid transparent;
+    font-weight: 500;
+    cursor: default;
+}
+
+.light-mode .link.active {
+    color: #fff;
+}
+
+.link.active-brd {
+    width: 100%;
+    border-left: 1px solid #f7ecb5;
+    transition: border-left 0.2s ease;
+}
+
+.light-mode .link {
+    border-left: 2px solid transparent;
+}
+
+/* .light-mode .link.active {
+    border-left: 2px solid transparent;
+} */
+
+.light-mode .link.active-brd {
+    border-left: 2px solid #000;
+}
+
+
+/*  ===  STYLE TEXT HEADER  ===
+******************************************************* */
+/* for h1 - main title */
+.heading {
+    font-size: 4.5rem;
+    line-height: 1.05;
+    font-size: 2.1vw;
+    color: var(--textPrimary);
+}
+
+
+/*  ===  STYLE TEXT NAVBAR  ===
+******************************************************* */
+/* for title in navbar */
+.title-navbar {
+    font-size: 2.4rem;
+    font-weight: 500;
+    font-size: 1.25vw;
+    text-decoration: none;
+    cursor: default;
+    cursor: row-resize;
+}
+
+
+/*  ===  STYLE TEXT DESCRIPTION  ===
+******************************************************* */
+.h22 {
+    font-weight: 600;
+    font-size: 2vw;
+    padding-top: 2vh;
+}
+
+.h33 {
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 1.5vw;
+    border-bottom: 1px dotted rgb(198 196 196 / 35%);
+    padding-bottom: 1.2rem;
+    color: var(--textSecondary);
+}
+
+.light-mode .h33 {
+    border-bottom: 1px dotted rgb(198 196 196);
+}
+
+.h44 {
+    margin-bottom: 1.8rem;
+    color: var(--subtitle);
+    font-weight: 500;
+    font-size: 1.15vw;
+}
+
+.hand {
+    color: #ff865f;
+    margin-right: 0.5rem;
+    font-size: 2rem;
+}
+
+.rules-content,
+.elements-description {
+    font-size: 1.6rem;
+    font-family: monospace;
+    list-style: none;
+    counter-reset: section;
+    color: var(--textTertiary);
+}
+
+.elements-description {
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+code,
+code:before,
+code:after {
+    content: "`";
+    color: #f7ecb5;
+}
+
+.light-mode code,
+.light-mode code:before,
+.light-mode code:after {
+    content: "`";
+    color: #ac1649;
+}

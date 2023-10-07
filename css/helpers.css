@@ -1,0 +1,149 @@
+/*  ===  RESET ALL PADDING AND MARGIN  ===
+******************************************************* */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/*  ===  STYLE SCROLLBAR OPTIONALLY  ===
+******************************************************* */
+/* width */
+/* Track */
+/* Handle */
+/* Handle on hover */
+::-webkit-scrollbar {
+    width: 0.4vw;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scroll-track);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scroll-thumb);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scroll-hover);
+}
+
+
+/*  ===  RESET BUTTON AND INPUT  ===
+******************************************************* */
+button,
+form button,
+form input[type="text"],
+form input[type="email"],
+form input[type="submit"],
+ul,
+ol,
+li {
+    all: unset;
+}
+
+
+/*  ===  STYLE IMAGE  ===
+******************************************************* */
+img {
+    vertical-align: bottom;
+    max-width: 100%;
+}
+
+
+/*  ===  STYLE DISPLAY  ===
+******************************************************* */
+.noneDisplay {
+    display: none;
+}
+
+.hidden {
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    transform: translateX(100%);
+    transition: all 600ms ease;
+}
+
+
+/*  ===  STYLE MARGIN  ===
+******************************************************* */
+/* 
+m = margin
+mt = margin-top
+mr = margin-right
+mb = margin-bottom
+ml = margin-left
+mtb = margin-top, margin-bottom
+mrl = margin-right, margin-left 
+!!! dash addition shows the value of the property !!!
+*/
+
+.mb-80 {
+    margin-bottom: 8rem;
+}
+
+.mb-30 {
+    margin-bottom: 3rem
+}
+
+.mtb {
+    margin: 4rem 0;
+}
+
+.mb {
+    margin-bottom: 6rem;
+}
+
+.ml-30 {
+    margin-left: 3rem;
+}
+
+.mt-20 {
+    margin-top: 2rem;
+}
+
+.mb-20 {
+    margin-bottom: 2rem;
+}
+
+.ml-20 {
+    margin-left: 2rem;
+}
+
+.mt-15 {
+    margin-top: 1.5rem;
+}
+
+.mb-15 {
+    margin-bottom: 1.5rem;
+}
+
+.ml-60 {
+    margin-left: 6rem;
+}
+
+
+/*  ===  STYLE PADDING  ===
+******************************************************* */
+/* 
+m = padding
+mt = padding-top
+mr = padding-right
+mb = padding-bottom
+ml = padding-left
+mtb = padding-top, padding-bottom
+mrl = padding-right, padding-left 
+!!! dash addition shows the value of the property !!!
+*/
+
+.prl-10 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.ptb-10 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
