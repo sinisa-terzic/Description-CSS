@@ -181,6 +181,14 @@
     background-color: #ccc;
 }
 
+#reset-font-sizes {
+    padding: 0.8rem 1rem;
+    background-color: #981b1e;
+    color: #fff;
+    font-weight: 500;
+    justify-self: center;
+    cursor: pointer;
+}
 
 
 /* for button sun */

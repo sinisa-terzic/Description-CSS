@@ -21,6 +21,12 @@
 }
 
 
+
+.grid {
+    display: grid;
+}
+
+
 /*  ===  STYLE SEARCH INPUT  ===
 ******************************************************* */
 #searchInput {
