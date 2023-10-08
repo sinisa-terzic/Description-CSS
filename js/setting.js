@@ -58,13 +58,14 @@ scrollBottom.addEventListener('click', function () {
 ///////////////////////////////////////////////////////////
 // FOR IMAGE
 // Select the image elements by their class or ID
-const imgElements = document.querySelectorAll("img"); // You can use a class or another selector
+/* const imgElements = document.querySelectorAll("img"); // You can use a class or another selector
 
 // Set the width and height for each image element
 imgElements.forEach((img) => {
     img.width = 1260; // Set the desired width in pixels
     img.height = 55; // Set the desired height in pixels
-});
+}); */
+
 
 
 
