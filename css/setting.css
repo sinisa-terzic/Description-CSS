@@ -156,6 +156,11 @@
     align-items: center;
 }
 
+.font-control svg {
+    fill: #000;
+    width: 1.2rem;
+}
+
 #font-size-slider {
     flex-grow: 1;
 }
