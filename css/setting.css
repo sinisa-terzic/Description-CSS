@@ -159,7 +159,7 @@
 .useTheme span {
     font-size: 1.5rem;
     font-weight: 500;
-    color: #053a5f;
+    /* color: #053a5f; */
 }
 
 .font-control svg {
