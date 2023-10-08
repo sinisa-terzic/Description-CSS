@@ -122,7 +122,7 @@ body {
     color: var(--textPrimary);
     background-image: none;
     -webkit-text-fill-color: initial;
-    -webkit-text-fill-color: initial;
+    -moz-text-fill-color: initial;
     filter: none;
 }
 
