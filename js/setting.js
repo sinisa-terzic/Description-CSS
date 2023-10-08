@@ -55,4 +55,18 @@ scrollBottom.addEventListener('click', function () {
 
 
 
+///////////////////////////////////////////////////////////
+// FOR IMAGE
+// Select the image elements by their class or ID
+const imgElements = document.querySelectorAll("img"); // You can use a class or another selector
+
+// Set the width and height as percentages for each image element
+imgElements.forEach((img) => {
+    img.style.width = "100%"; // Set the width to 100%
+    img.style.height = "auto"; // Auto height to maintain aspect ratio
+});
+
+
+
+
 
