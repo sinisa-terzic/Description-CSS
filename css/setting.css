@@ -156,6 +156,12 @@
     align-items: center;
 }
 
+.useTheme span {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #053a5f;
+}
+
 .font-control svg {
     fill: #053a5f;
     width: 1.2rem;
