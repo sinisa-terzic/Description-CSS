@@ -27,6 +27,9 @@
     --scroll-thumb: #13131a;
     --scroll-hover: #676767;
 
+
+    --rainbow-gradient: linear-gradient(-90deg, #adfbda 0, #35c3ff 30%, #fda399 50%, #76d880 70%, #ebf38b 90%, #adfbda 100%);
+
 }
 
 
