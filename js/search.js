@@ -1,76 +1,38 @@
-// Function to handle search and highlight within all .navbar-item articles
-var matchingDiv = document.createElement('div');
-function searchAndHighlight() {
-    var searchText = document.getElementById('searchInput').value.toLowerCase();
-    var articles = document.querySelectorAll('.navbar-item'); // Select all .navbar-item articles
+// Create a div to display matching navigation links
+const matchingDiv = document.createElement('div');
+matchingDiv.id = 'matchingNav';
+matchingDiv.innerHTML = '<strong>Matching Navigation:</strong>';
+matchingDiv.classList.add('matchingDiv');
 
-    // Create a div to display matching navigation links
-    matchingDiv.id = 'matchingNav';
-    matchingDiv.innerHTML = '<strong>Matching Navigation:</strong>';
-    matchingDiv.classList.add("matchingDiv");
-
-    articles.forEach(function (article) {
-        var navLinks = article.querySelectorAll('.linkA'); // Select all links with class "linkA" within the article
-
-        navLinks.forEach(function (link) {
-            var linkText = link.textContent.toLowerCase();
-
-            if (linkText.includes(searchText)) {
-                link.classList.add('active'); // Add .active class to the link
-
-                // Create a matching link text element
-                var matchingLink = document.createElement('p');
-                matchingLink.textContent = link.textContent;
-                matchingLink.classList.add("matchingLink");
-                matchingLink.tabIndex = 0; // Make it focusable
-
-                // Remove active class from the clicked matchingLink
-                matchingLink.addEventListener('click', function () {
-                    var allLinks = document.querySelectorAll('.linkA');
-                    allLinks.forEach(function (link) {
-                        link.classList.remove('active');
-                    });
-                });
-
-                matchingDiv.appendChild(matchingLink);
-
-                // Add a click event listener to simulate link click
-                matchingLink.addEventListener('click', function () {
-                    link.click();
-                    document.getElementById('searchInput').value = ''; // Clear the search input
-                    matchingDiv.innerHTML = ''; // Clear the matchingDiv
-                    warningSearchText.classList.add('noneDisplay');
-                });
-
-            } else {
-                link.classList.remove('active'); // Remove .active class from the link
-            }
-        });
-    });
-
-    // Check if search input is empty and remove active class if it is
-    if (searchText === '') {
-        var allLinks = document.querySelectorAll('.linkA');
-        allLinks.forEach(function (link) {
-            link.classList.remove('active');
-        });
-        matchingDiv.innerHTML = ''; // Clear the matchingDiv
-        warningSearchText.classList.add('noneDisplay');
-    }
-
-    // Get the existing matchingDiv (if it exists) and remove it
-    var existingMatchingDiv = document.getElementById('matchingNav');
-    if (existingMatchingDiv) {
-        existingMatchingDiv.parentNode.removeChild(existingMatchingDiv);
-    }
-
-    // Append the matchingDiv below the search input
-    document.getElementById('searchInput').insertAdjacentElement('afterend', matchingDiv);
-}
-
+// Initialize selected matching link index
+let selectedMatchingLinkIndex = -1;
 
 // Function to handle navigation through matching links using arrow keys
-const warningSearchText = document.querySelector('.warningSearchText')
+function navigateMatchingLinks(direction) {
+    const matchingLinks = matchingDiv.querySelectorAll('.matchingLink');
+
+    if (matchingLinks.length === 0) {
+        return;
+    }
+
+    if (direction === 'up') {
+        selectedMatchingLinkIndex = (selectedMatchingLinkIndex - 1 + matchingLinks.length) % matchingLinks.length;
+    } else if (direction === 'down') {
+        selectedMatchingLinkIndex = (selectedMatchingLinkIndex + 1) % matchingLinks.length;
+    }
+
+    // Handle class for focus effect
+    matchingLinks.forEach((link, index) => {
+        if (index === selectedMatchingLinkIndex) {
+            link.classList.add('focused');
+        } else {
+            link.classList.remove('focused');
+        }
+    });
+}
+
+// Function to handle navigation through matching links using arrow keys
+const warningSearchText = document.querySelector('.warningSearchText');
 function checkMinLength(input) {
     var minLength = 3; // Change this to your desired minimum length
 
@@ -84,45 +46,107 @@ function checkMinLength(input) {
     }
 }
 
+// Function to perform a search
+function performSearch(searchText) {
+    const activeLink = document.querySelector('.linkA.active');
+    if (activeLink) {
+        activeLink.classList.remove('active');
+        activeLink.click(); // Simulate a click on the active link
+    }
+    document.getElementById('searchInput').value = ''; // Clear the search input
+    matchingDiv.innerHTML = ''; // Clear the matchingDiv
+    warningSearchText.classList.add('noneDisplay');
+}
+
+// Function to handle Enter key press
 function handleEnterKeyPress(event) {
     if (event.key === 'Enter') {
-        var searchText = document.getElementById('searchInput').value;
+        const searchText = document.getElementById('searchInput').value;
 
         if (searchText.length >= 3) {
-            // The minimum length requirement is met, so you can proceed with your Enter key action.
-            // For example, trigger a search.
-            performSearch(searchText);
+            performSearch(searchText); // Trigger the search
         } else {
-            // Prevent the Enter key action when the minimum length requirement is not met.
-            event.preventDefault();
+            event.preventDefault(); // Prevent Enter key action if the input length requirement is not met
         }
     }
 }
 
-function performSearch(searchText) {
-    // Implement your search logic here.
-    // This function will be called when the user presses Enter and the input has at least three characters.
+// Function to handle input changes and matching link highlighting
+function searchAndHighlight() {
+    const searchText = document.getElementById('searchInput').value.toLowerCase();
+    const articles = document.querySelectorAll('.navbar-item');
 
+    articles.forEach((article) => {
+        const navLinks = article.querySelectorAll('.linkA');
 
-    // Add your code here to handle the search and matchingDiv as needed.
-    // For example, you can add code to create and populate the matchingDiv.
-    // Ensure that you remove 'active' classes and clear the matchingDiv as required.
-    const activeLink = document.querySelector('.linkA.active');
-    if (activeLink) {
-        activeLink.classList.remove('active');
-        activeLink.click(); // Simulate a click on the active link, simulate click on first linik from matchingDiv
+        navLinks.forEach((link) => {
+            const linkText = link.textContent.toLowerCase();
+
+            if (linkText.includes(searchText)) {
+                link.classList.add('active'); // Add .active class to the link
+
+                const matchingLink = document.createElement('p');
+                matchingLink.textContent = link.textContent;
+                matchingLink.classList.add('matchingLink');
+                matchingLink.tabIndex = 0; // Make it focusable
+
+                matchingLink.addEventListener('click', () => {
+                    const allLinks = document.querySelectorAll('.linkA');
+                    allLinks.forEach((link) => {
+                        link.classList.remove('active');
+                    });
+                });
+
+                matchingDiv.appendChild(matchingLink);
+
+                matchingLink.addEventListener('click', () => {
+                    link.click();
+                    document.getElementById('searchInput').value = ''; // Clear the search input
+                    matchingDiv.innerHTML = ''; // Clear the matchingDiv
+                    warningSearchText.classList.add('noneDisplay');
+                });
+            } else {
+                link.classList.remove('active'); // Remove .active class from the link
+            }
+        });
+    });
+
+    if (searchText === '') {
+        matchingDiv.innerHTML = ''; // Clear the matchingDiv
+        warningSearchText.classList.add('noneDisplay');
     }
-    document.getElementById('searchInput').value = ''; // Clear the search input
-    matchingDiv.innerHTML = ''; // Clear the matchingDiv
-}
 
+    const existingMatchingDiv = document.getElementById('matchingNav');
+    if (existingMatchingDiv) {
+        existingMatchingDiv.parentNode.removeChild(existingMatchingDiv);
+    }
+
+    document.getElementById('searchInput').insertAdjacentElement('afterend', matchingDiv);
+}
 
 // Add an event listener to the search input for input changes
 document.getElementById('searchInput').addEventListener('input', searchAndHighlight);
 
-// Add an event listener to the search input for Enter key press
-document.getElementById('searchInput').addEventListener('keydown', function (event) {
+// Add keyboard event listeners for arrow keys and Enter key
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowUp') {
+        navigateMatchingLinks('up');
+        event.preventDefault();
+    } else if (event.key === 'ArrowDown') {
+        navigateMatchingLinks('down');
+        event.preventDefault();
+    }
+
     if (event.key === 'Enter') {
-        handleEnterKeyPress(event);
+        if (selectedMatchingLinkIndex >= 0) {
+            const matchingLinks = matchingDiv.querySelectorAll('.matchingLink');
+            if (selectedMatchingLinkIndex < matchingLinks.length) {
+                matchingLinks[selectedMatchingLinkIndex].click();
+                document.getElementById('searchInput').value = ''; // Clear the search input
+                matchingDiv.innerHTML = ''; // Clear the matchingDiv
+                warningSearchText.classList.add('noneDisplay');
+            }
+        }
     }
 });
+

@@ -42,11 +42,16 @@ function removeActiveClass() {
 removeActiveClass();
 
 
+
+export { addActiveClass, removeActiveClass };
+
+
 ///////////////////////////////////////////////////////////
 // Function to remove the "active" class from a list of elements
 export function removeActiveClassFromElements(elements) {
     elements.forEach(function (element) {
         element.classList.remove('active');
+        console.log("remove active class");
     });
 
     // Store a boolean value in localStorage to represent the removal of the "active" class
