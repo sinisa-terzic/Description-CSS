@@ -55,55 +55,6 @@ scrollBottom.addEventListener('click', function () {
 
 
 
-///////////////////////////////////////////////////////////
-// FOR IMAGE
-// Select the image elements by their class or ID
-const imgElements = document.querySelectorAll("img"); // You can use a class or another selector
-
-// Set the width and height for each image element
-/* imgElements.forEach((img) => {
-    img.width = 1260; // Set the desired width in pixels
-    img.height = 55; // Set the desired height in pixels
-}); */
-
-
-
-/* ///////////////////////////////////////////////////////////
-// JavaScript to handle scrolling to sections
-const linkANavLinks = document.querySelectorAll('.linkA');
-linkANavLinks.forEach((link) => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault();
-        const targetId = link.getAttribute('href').substring(1); // Extract the target section ID
-        const targetSection = document.getElementById(targetId);
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-
-        // Update the URL for back/forward navigation
-        history.pushState({ section: targetId }, null, `#${targetId}`);
-    });
-});
-
-
-const descriptionSections = document.querySelectorAll('.description section');
-descriptionSections.forEach((section) => {
-    section.addEventListener('click', () => {
-        const sectionId = section.id;
-        // Update the URL for back/forward navigation
-        history.pushState({ section: sectionId }, null, `#${sectionId}`);
-    });
-});
-
-
-window.addEventListener('popstate', (event) => {
-    if (event.state && event.state.section) {
-        const targetSection = document.getElementById(event.state.section);
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-    }
-});
- */
-
-
-
 
 
 
