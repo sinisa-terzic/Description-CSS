@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+/* document.addEventListener('DOMContentLoaded', function () {
     // DOM element references
     const autoThemeCheckbox = document.querySelector("#auto-theme-checkbox");
     const toggleButton = document.querySelector(".dark-light");
@@ -129,4 +129,4 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem("autoThemeEnabled", autoThemeCheckbox.checked ? "true" : "false");
         localStorage.setItem("theme", body.classList.contains("light-mode") ? "dark" : "light");
     });
-});
+}); */

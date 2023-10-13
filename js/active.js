@@ -111,3 +111,4 @@ const section = document.getElementById('description'); // Replace with the actu
 section.addEventListener('scroll', saveScrollPosition);
 /* Call restoreScrollPosition when the page loads */
 window.addEventListener('load', restoreScrollPosition);
+
