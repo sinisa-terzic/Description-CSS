@@ -104,59 +104,6 @@ window.addEventListener('popstate', (event) => {
 
 
 
-const linkANavLinks = document.querySelectorAll('.linkA');
-linkANavLinks.forEach((link) => {
-    link.addEventListener('click', (event) => {
-        event.preventDefault();
-        const targetId = link.getAttribute('href').substring(1); // Extract the target section ID
-        const targetSection = document.getElementById(targetId);
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-
-        // Update the URL for back/forward navigation
-        history.pushState({ section: targetId }, null, `#${targetId}`);
-    });
-});
-
-const descriptionSections = document.querySelectorAll('.description section');
-descriptionSections.forEach((section) => {
-    section.addEventListener('click', () => {
-        const sectionId = section.id;
-        const activeLink = document.querySelector('.linkA.active');
-        if (activeLink) {
-            activeLink.classList.remove('active');
-        }
-        // Update the URL for back/forward navigation
-        history.pushState({ section: sectionId }, null, `#${sectionId}`);
-        const matchingLink = document.querySelector(`.linkA[href="#${sectionId}"]`);
-        if (matchingLink) {
-            matchingLink.classList.add('active');
-        }
-    });
-});
-
-window.addEventListener('popstate', (event) => {
-    if (event.state && event.state.section) {
-        const targetSection = document.getElementById(event.state.section);
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-        const matchingLink = document.querySelector(`.linkA[href="#${event.state.section}"]`);
-        const activeLink = document.querySelector('.linkA.active');
-        if (activeLink) {
-            activeLink.classList.remove('active');
-        }
-        if (matchingLink) {
-            matchingLink.classList.add('active');
-        }
-    }
-});
-
-// JavaScript to handle forward navigation
-/* document.getElementById('go-forward').addEventListener('click', () => {
-    history.forward();
-}); */
-
-
-
-
 
 
 
