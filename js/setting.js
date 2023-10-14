@@ -44,10 +44,16 @@ function scrollToCursorLink() {
     }
 }
 
+const navbar = document.querySelector('.navbar');
+
 // Event listener for scrolling to the top
 const scrollTopButton = document.querySelector('.scrollTop');
 const layoutLink = document.getElementById('layoutLink');
 scrollTopButton.addEventListener('click', function () {
+    if (navbar) {
+        navbar.scrollIntoView({ behavior: 'smooth' });
+        navbar.scrollTop = 0;
+    }
     scrollToSectionTop('description');
     layoutLink.click(); // Simulate a click on the "Layout" link
 });
@@ -57,7 +63,11 @@ const scrollBottomButton = document.querySelector('.scrollBottom');
 scrollBottomButton.addEventListener('click', function () {
     scrollToSectionBottom('description');
     scrollToCursorLink();
+    navbar.scrollTop = navbar.scrollHeight;
 });
+
+
+
 
 
 

@@ -153,7 +153,7 @@ document.addEventListener('keydown', (event) => {
 
 
 ///////////////////////////////////////////////////////////
-//
+// ADD ACTIVE CLASS ON LINK 
 document.addEventListener('DOMContentLoaded', function () {
     const navLinks = document.querySelectorAll('.link');
     const titleNavbar = document.querySelectorAll(".titleNavbar");
