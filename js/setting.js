@@ -19,39 +19,47 @@ darkOpen.addEventListener('click', toggleAlertTheme);
 
 ///////////////////////////////////////////////////////////
 // SCROLL TOP / BOTTOM OF THE SECTION
-import { removeActiveClassFromElements } from './active.js';
-
-const scrollTop = document.querySelector('.scrollTop');
-const scrollBottom = document.querySelector('.scrollBottom');
-const navLinks = document.querySelectorAll('.linkA');
 
 // Function to scroll to the top of a section
 function scrollToSectionTop(sectionId) {
     const section = document.getElementById(sectionId);
     if (section) {
         section.scrollTop = 0;
-        removeActiveClassFromElements(navLinks);
     }
 }
-scrollTop.addEventListener('click', function () {
-    scrollToSectionTop('description');
-    localStorage.clear();
-    // console.log('scroll top is ok')
-});
 
-// Function to scroll to the bottom of the section
+// Function to scroll to the bottom of a section
 function scrollToSectionBottom(sectionId) {
     const section = document.getElementById(sectionId);
     if (section) {
         section.scrollTop = section.scrollHeight;
-        removeActiveClassFromElements(navLinks);
     }
 }
-scrollBottom.addEventListener('click', function () {
-    scrollToSectionBottom('description');
-    localStorage.clear();
-    // console.log('scroll bottom is ok')
+
+// Function to simulate a click on the last "Cursor" link and remove active class from other links
+function scrollToCursorLink() {
+    const cursorLinks = document.querySelectorAll('a[name]');
+    if (cursorLinks.length > 0) {
+        cursorLinks[cursorLinks.length - 1].click(); // Simulate a click on the last "Cursor" link
+    }
+}
+
+// Event listener for scrolling to the top
+const scrollTopButton = document.querySelector('.scrollTop');
+const layoutLink = document.getElementById('layoutLink');
+scrollTopButton.addEventListener('click', function () {
+    scrollToSectionTop('description');
+    layoutLink.click(); // Simulate a click on the "Layout" link
 });
+
+// Event listener for scrolling to the bottom
+const scrollBottomButton = document.querySelector('.scrollBottom');
+scrollBottomButton.addEventListener('click', function () {
+    scrollToSectionBottom('description');
+    scrollToCursorLink();
+});
+
+
 
 
 

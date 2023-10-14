@@ -1,6 +1,6 @@
 /*  ===  STYLE HEADER  ===
 ******************************************************* */
-.description-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -9,6 +9,10 @@
     z-index: 1;
     padding: 0px 0.9vw;
     background-color: var(--bgPrimary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .technicalBox {
@@ -37,11 +41,14 @@
 /*  ===  STYLE NAVBAR BOX  ===
 ******************************************************* */
 .navbar {
-    height: calc(100vh - 10vh);
-    height: auto;
     padding: 1.5vh 0 0 1vw;
     overflow-y: scroll;
     background-color: var(--bgSecondary);
+    width: 12vw;
+    position: fixed;
+    height: calc(100vh - 10vh);
+    left: 0;
+    bottom: 0;
 }
 
 .navbar-item {
@@ -62,13 +69,17 @@
 
 /*  ===  STYLE DESCRIPTION BOX  ===
 ******************************************************* */
-.description {
+#description {
+    width: 88vw;
     height: calc(100vh - 10vh);
-    height: auto;
+    /* height: auto; */
     padding: 0 1vw 0 1vw;
     overflow-x: hidden;
     overflow-y: scroll;
     background-color: var(--bgTertiary);
+    position: fixed;
+    right: 0;
+    bottom: 0;
 }
 
 .description-layout {

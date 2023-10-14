@@ -48,7 +48,7 @@ function checkMinLength(input) {
 
 // Function to perform a search
 function performSearch(searchText) {
-    const activeLink = document.querySelector('.linkA.active');
+    const activeLink = document.querySelector('.link.active');
     if (activeLink) {
         activeLink.classList.remove('active');
         activeLink.click(); // Simulate a click on the active link
@@ -77,7 +77,7 @@ function searchAndHighlight() {
     const articles = document.querySelectorAll('.navbar-item');
 
     articles.forEach((article) => {
-        const navLinks = article.querySelectorAll('.linkA');
+        const navLinks = article.querySelectorAll('.link');
 
         navLinks.forEach((link) => {
             const linkText = link.textContent.toLowerCase();
@@ -91,7 +91,7 @@ function searchAndHighlight() {
                 matchingLink.tabIndex = 0; // Make it focusable
 
                 matchingLink.addEventListener('click', () => {
-                    const allLinks = document.querySelectorAll('.linkA');
+                    const allLinks = document.querySelectorAll('.link');
                     allLinks.forEach((link) => {
                         link.classList.remove('active');
                     });
@@ -149,4 +149,51 @@ document.addEventListener('keydown', (event) => {
         }
     }
 });
+
+
+
+///////////////////////////////////////////////////////////
+//
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.link');
+    const titleNavbar = document.querySelectorAll(".titleNavbar");
+
+    // Add active class when a link is clicked
+    navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            navLinks.forEach((otherLink) => otherLink.classList.remove("active"));
+            link.classList.add("active");
+        });
+    });
+
+
+    // Remove active class when a link is clicked
+    titleNavbar.forEach((link) => {
+        link.addEventListener("click", () => {
+            navLinks.forEach((otherLink) => otherLink.classList.remove("active"));
+            link.classList.remove("active");
+        });
+    });
+
+
+    // Apply the "active" class based on the URL fragment
+    function setActiveLinkFromFragment() {
+        const fragment = window.location.hash.substr(1); // Get the fragment (e.g., "section1")
+        if (fragment) {
+            const activeLink = document.querySelector(`[name="${fragment}"]`);
+            if (activeLink) {
+                navLinks.forEach(link => link.classList.remove('active'));
+                activeLink.classList.add('active');
+                description.scrollTop = document.getElementById(fragment).offsetTop;
+            }
+        }
+    }
+
+    // Add a listener for changes to the URL fragment (e.g., when using back/forward buttons)
+    window.addEventListener('hashchange', setActiveLinkFromFragment);
+
+    // Call the function initially to set the "active" class when the page loads or when returning from bfcache
+    setActiveLinkFromFragment();
+});
+
 

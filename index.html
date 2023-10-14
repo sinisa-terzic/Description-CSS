@@ -18,12 +18,13 @@
     <link rel="stylesheet" href="css/technical.css" />
     <link rel="stylesheet" href="css/queries.css" />
     <link rel="stylesheet" href="css/helpers.css" />
+
 </head>
 
 <body> <!-- class="light-mode" -->
 
     <!-- HEADER ================================== -->
-    <header class="description-header">
+    <header class="header">
         <h1 id="h1" class="heading">Description of <span class="change-h1" id="change-h1">CSS</span> usage</h1>
 
         <div class="technicalBox">
@@ -208,6 +209,7 @@
                         <span id="current-list-item-font-size">Font Size: 16px</span>
                     </div>
                 </div>
+
                 <!-- title -->
                 <p class="secThemeMessage prl-10 mb-15">Title</p>
                 <div class="themeCommand mb-20 prl-10">
@@ -293,10 +295,8 @@
                 <div class="grid">
                     <button id="reset-font-sizes">Reset Font Sizes</button>
                 </div>
-
-
-
             </section>
+
             <!-- background color -->
             <section class="secBgColor mb-30">
                 <div class="secThemeHeader mb-15">
@@ -316,1020 +316,931 @@
     </article> <!-- END SETTING BOX -->
 
 
-    <!-- DESCRIPTION BODY ================================== -->
-    <main class="description-body">
-
-        <!-- NAVBAR ================================== -->
-        <section class="navbar">
-            <!-- LAYOUT -->
-            <article class="navbar-item">
-                <div class="navbar-item-title">
-                    <svg class="layout-color" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px"
-                        viewBox="0 0 50 46.5" style="enable-background:new 0 0 50 46.5;" xml:space="preserve">
-                        <g>
-                            <path
-                                d="M19,4v4H4V4H19 M21,0H2C0.9,0,0,0.9,0,2v8c0,1.1,0.9,2,2,2h19c1.1,0,2-0.9,2-2V2C23,0.9,22.1,0,21,0L21,0z" />
-                        </g>
-                        <g>
-                            <path
-                                d="M46,38.5v4H31v-4H46 M48,34.5H29c-1.1,0-2,0.9-2,2v8c0,1.1,0.9,2,2,2h19c1.1,0,2-0.9,2-2v-8C50,35.4,49.1,34.5,48,34.5   L48,34.5z" />
-                        </g>
-                        <g>
-                            <path
-                                d="M18,20.7v21.8H4V20.7H18 M20,16.7H2c-1.1,0-2,0.9-2,2v25.8c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2V18.7   C22,17.6,21.1,16.7,20,16.7L20,16.7z" />
-                        </g>
-                        <g>
-                            <path
-                                d="M46,4v21.8H32V4H46 M48,0H30c-1.1,0-2,0.9-2,2v25.8c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2V2C50,0.9,49.1,0,48,0L48,0z" />
-                        </g>
-                    </svg>
-                    <a class="title-navbar layout-color" href="#layout">Layout</a>
-                </div>
-                <ul class="list">
-                    <li class="list-item"><a class="link linkA" href="#container" data-section='01'>Container</a>
-                    </li>
-                    <li class="list-item"><a class="link linkA" href="#grid" data-section='02'>Grid</a></li>
-                    <li class="list-item"><a class="link linkA" href="#flex" data-section='03'>Flex</a></li>
-                </ul>
-            </article> <!-- END LAYOUT -->
-            <!-- ELEMENTS -->
-            <article class="navbar-item">
-                <div class="navbar-item-title">
-                    <svg class="element-color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <!-- NAVBAR ================================== -->
+    <section class="navbar">
+        <!-- LAYOUT -->
+        <article class="navbar-item">
+            <div class="navbar-item-title">
+                <svg class="layout-color" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 50 46.5"
+                    style="enable-background:new 0 0 50 46.5;" xml:space="preserve">
+                    <g>
                         <path
-                            d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z">
-                        </path>
-                    </svg>
-                    <a class="title-navbar element-color" href="#elements">Elements</a>
-                </div>
-                <ul class="list ">
-                    <li class="list-item"><a class="link linkA" href="#typography" data-section='04'>Typography</a>
-                    </li>
-                    <li class="list-item"><a class="link linkA" href="#link" data-section='05'>Hyperlinks</a></li>
-                    <li class="list-item"><a class="link linkA" href="#list" data-section='06'>Lists</a></li>
-                    <li class="list-item"><a class="link linkA" href="#btn" data-section='07'>Buttons</a></li>
-                    <li class="list-item"><a class="link linkA" href="#img" data-section='08'>Images</a></li>
-                    <li class="list-item"><a class="link linkA" href="#icon" data-section='10'>Icons</a></li>
-                </ul>
-            </article><!-- END ELEMENTS -->
+                            d="M19,4v4H4V4H19 M21,0H2C0.9,0,0,0.9,0,2v8c0,1.1,0.9,2,2,2h19c1.1,0,2-0.9,2-2V2C23,0.9,22.1,0,21,0L21,0z" />
+                    </g>
+                    <g>
+                        <path
+                            d="M46,38.5v4H31v-4H46 M48,34.5H29c-1.1,0-2,0.9-2,2v8c0,1.1,0.9,2,2,2h19c1.1,0,2-0.9,2-2v-8C50,35.4,49.1,34.5,48,34.5   L48,34.5z" />
+                    </g>
+                    <g>
+                        <path
+                            d="M18,20.7v21.8H4V20.7H18 M20,16.7H2c-1.1,0-2,0.9-2,2v25.8c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2V18.7   C22,17.6,21.1,16.7,20,16.7L20,16.7z" />
+                    </g>
+                    <g>
+                        <path
+                            d="M46,4v21.8H32V4H46 M48,0H30c-1.1,0-2,0.9-2,2v25.8c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2V2C50,0.9,49.1,0,48,0L48,0z" />
+                    </g>
+                </svg>
+                <!-- <a class="title-navbar layout-color" href="#layout">Layout</a> -->
+                <!-- <h2><a class="titleNavbar layout-color" href="#titleNavbar1" name="titleNavbar1">Layout</a></h2> -->
+                <h2><a id="layoutLink" class="titleNavbar layout-color" href="#titleNavbar1"
+                        name="titleNavbar1">Layout</a></h2>
+            </div>
+
+            <ul class="list">
+                <li class="list-item"><a class="link" href="#section1" name="section1">Container</a></li>
+                <li class="list-item"><a class="link" href="#section2" name="section2">Grid</a></li>
+                <li class="list-item"><a class="link" href="#section3" name="section3">Flex</a></li>
+            </ul>
+        </article> <!-- END LAYOUT -->
+        <!-- ELEMENTS -->
+        <article class="navbar-item">
+            <div class="navbar-item-title">
+                <svg class="element-color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0L362.3 51.7l97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2L471.6 21.7zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5L437.7 172.3 339.7 74.3 172.4 241.7zM96 64C43 64 0 107 0 160V416c0 53 43 96 96 96H352c53 0 96-43 96-96V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z">
+                    </path>
+                </svg>
+                <!-- <a class="title-navbar element-color" href="#elements">Elements</a> -->
+                <h2><a class="titleNavbar element-color" href="#titleNavbar2" name="titleNavbar2">Elements</a></h2>
+            </div>
+
+            <ul class="list">
+                <li class="list-item"><a class="link" href="#section4" name="section4">Typography</a></li>
+                <li class="list-item"><a class="link" href="#section5" name="section5">Hyperlinks</a></li>
+                <li class="list-item"><a class="link" href="#section6" name="section6">Lists</a></li>
+                <li class="list-item"><a class="link" href="#section7" name="section7">Buttons</a></li>
+                <li class="list-item"><a class="link" href="#section8" name="section8">Images</a></li>
+                <li class="list-item"><a class="link" href="#section9" name="section9">Icons</a></li>
+            </ul>
+        </article><!-- END ELEMENTS -->
+        <!-- BOX MODELS -->
+        <article class="navbar-item">
+            <div class="navbar-item-title">
+                <svg class="box-model-color" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0px" y="0px"
+                    viewBox="0 0 50 46.5" style="enable-background:new 0 0 50 46.5;" xml:space="preserve">
+                    <polygon points="4.2,8.5 25,0 45.2,8.5 24.7,17.4 " />
+                    <polygon points="0,11.9 21.4,20.8 21.4,46.5 0,37.5 " />
+                    <polygon points="29,20.6 50,11.9 50,37.6 28.6,46.5 " />
+                </svg>
+                <!-- <a class="title-navbar box-model-color" href="#box-models">Box models</a> -->
+                <h2><a class="titleNavbar box-model-color" href="#titleNavbar3" name="titleNavbar3">Box models</a></h2>
+            </div>
+
+            <ul class="list">
+                <li class="list-item"><a class="link" href="#section10" name="section10">Display</a></li>
+                <li class="list-item"><a class="link" href="#section11" name="section11">Position</a></li>
+                <li class="list-item"><a class="link" href="#section12" name="section12">Margins</a></li>
+                <li class="list-item"><a class="link" href="#section13" name="section13">Paddings</a></li>
+                <li class="list-item"><a class="link" href="#section14" name="section14">Intersections</a></li>
+                <li class="list-item"><a class="link" href="#section15" name="section15">Cursor</a></li>
+            </ul>
+        </article> <!-- END BOX MODELS -->
+    </section> <!-- END NAVBAR -->
+
+
+    <!-- DESCRIPTIONS ================================== -->
+    <section id="description" class="description">
+        <!-- layout for description tag -->
+        <div class="description-layout">
+
+            <!-- LAYOUT -->
+            <article id="titleNavbar1" class="description-technics" data-section="titleNavbar1">
+                <h2 id="layout" class="h22 layout-color">Layout</h2>
+                <img src="img/border/border-1-row.png" class="border-1-row" alt="Border for page">
+
+                <!-- content -->
+                <section class="rules mb-80" id="section1" data-section='section1'>
+                    <h3 id="container" class="h33 headerBottom">Container:</h3>
+                    <p class="elements-description"><span class="hand">&#9755;</span> The
+                        <code>.container</code> class is used to define the styles
+                        for the
+                        container
+                        element.
+                    </p>
+                    <p class="elements-description"><span class="hand">&#9755;</span> <code>width</code> and
+                        <code>max-width</code> are set to control the width of the
+                        container.
+                        <code>max-width</code> ensures that the container won't exceed a certain width, especially
+                        on
+                        larger screens.
+                    </p>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
+                        <div class="rules-header">
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('containerHTMLRule')">Copy code</button>
+                        </div>
+                        <div class="html">
+                            <ul class="rules-content" id="containerHTMLRule">
+                                <!-- open div tag -->
+                                <li><span class="openDiv"></li>
+                                <!-- emty tag -->
+                                <li><span class="ml-30">content, content, content</span></li>
+                                <li><span class="ml-30">content, content, content</span></li>
+                                <li><span class="ml-30">content, content, content</span></li>
+                                <!-- close div tag -->
+                                <li><span class="closeDiv"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('containerRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="containerRule">
+                        <!-- comment -->
+                        <li><span class="comment">/* 120px * 10px = 1200px */</span></li>
+                        <!-- selector -->
+                        <li><span class="selector">.container </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">width:</span> 80%;</li>
+                        <li><span class="property">max-width:</span> 120em;</li>
+                        <li><span class="property">margin:</span> 0 auto;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+                </section> <!-- end content section -->
+
+                <!-- grid -->
+                <section class="rules mb-80" id="section2" data-section='section2'>
+                    <h3 id="grid" class="h33 headerBottom">Grid:</h3>
+                    <p class="elements-description"><span class="hand">&#9755;</span> The CSS Grid Layout Module
+                        offers
+                        a grid-based layout system, with rows and columns, making it easier to design web pages
+                        without
+                        having to use floats and positioning.
+                    </p>
+                    <p class="elements-description"><span class="hand">&#9755;</span> Class for grid:
+                        <code>.grid</code>
+                    </p>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
+                        <div class="rules-header">
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('gridHTMLRule')">Copy code</button>
+                        </div>
+                        <div class="html">
+                            <ul class="rules-content" id="gridHTMLRule">
+                                <!-- open div tag grid -->
+                                <li><span class="openDivGrid"></span></li>
+                                <!-- empty tag -->
+                                <li></li>
+                                <!-- close div tag grid -->
+                                <li><span class="closeDiv"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('gridRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="gridRule">
+                        <!-- selector -->
+                        <li><span class="selector">.grid </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">display:</span> grid;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+                </section> <!-- end grid section -->
+
+                <!-- flex -->
+                <section class="rules mb-80" id="section3" data-section='section3'>
+                    <h3 id="flex" class="h33 headerBottom">Flex:</h3>
+                    <p class="elements-description"><span class="hand">&#9755;</span> The Flexible Box Layout
+                        Module,
+                        makes it easier to design flexible responsive layout structure without using float or
+                        positioning.
+                    </p>
+                    <p class="elements-description"><span class="hand">&#9755;</span> Class for flex:
+                        <code>.flex</code>
+                    </p>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
+                        <div class="rules-header">
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('flexHTMLRule')">Copy code</button>
+                        </div>
+                        <div class="html">
+                            <ul class="rules-content" id="flexHTMLRule">
+                                <!-- open div tag flex -->
+                                <li><span class="openDivFlex"></span></li>
+                                <!-- empty tag -->
+                                <li></li>
+                                <!-- close div tag flex -->
+                                <li><span class="closeDiv"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('flexRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="flexRule">
+                        <!-- selector -->
+                        <li><span class="selector">.flex </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">display:</span> flex;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+                </section> <!-- end flex section -->
+            </article> <!-- END LAYOUT -->
+
+            <!-- ELEMENTS -->
+            <article id="titleNavbar2" class="description-technics" data-section="titleNavbar2">
+                <h2 id="elements" class="h22 element-color">Elements</h2>
+                <img src="img/border/border-1-row.png" class="border-1-row" alt="Border for page">
+
+                <!-- typography -->
+                <section class="rules mb-80" id="section4" data-section='section4'>
+                    <h3 id="flex" class="h33 headerBottom">Flex:</h3>
+                    <p class="elements-description"><span class="hand">&#9755;</span> The Flexible Box Layout
+                        Module,
+                        makes it easier to design flexible responsive layout structure without using float or
+                        positioning.
+                    </p>
+                    <p class="elements-description"><span class="hand">&#9755;</span> Class for flex:
+                        <code>.flex</code>
+                    </p>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
+                        <div class="rules-header">
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('flexHTMLRule')">Copy code</button>
+                        </div>
+                        <div class="html">
+                            <ul class="rules-content" id="flexHTMLRule">
+                                <!-- open div tag flex -->
+                                <li><span class="openDivFlex"></span></li>
+                                <!-- empty tag -->
+                                <li></li>
+                                <!-- close div tag flex -->
+                                <li><span class="closeDiv"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('flexRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="flexRule">
+                        <!-- selector -->
+                        <li><span class="selector">.flex </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">display:</span> flex;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+                </section> <!-- end typography section -->
+
+                <!-- link -->
+                <section class="rules mb-80" id="section5" data-section='section5'>
+                    <h3 id="link" class="h33 headerBottom">Hyperlinks:</h3>
+                    <div>
+                        <p class="elements-description"><span class="hand">&#9755;</span> The a tag defines a
+                            hyperlink,
+                            which is used to link from one page to another. Class for hyperlink <code>.link</code>
+                        </p>
+                        <p class="elements-description"><span class="hand">&#9755;</span> The most important
+                            attribute
+                            of the a element is the <code>href</code> attribute, which indicates the link's
+                            destination.
+                            We also have optional attribute <code>target</code>
+                        </p>
+                    </div>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
+                        <div class="rules-header">
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('linkHTMLRule')">Copy code</button>
+                        </div>
+                        <div class="html">
+                            <ul class="rules-content" id="linkHTMLRule">
+                                <!-- a tag -->
+                                <li><span class="openA"></span>Link<span class="closeA"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('linkRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="linkRule">
+                        <!-- selector -->
+                        <li><span class="selector">.link:link, </span></li>
+                        <li><span class="selector">.link:visited </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">display:</span> inline-block;</li>
+                        <li><span class="property">color:</span> #e67e22;</li>
+                        <li><span class="property">text-decoration:</span> none;</li>
+                        <li><span class="property">transition:</span> all 0.3s;</li>
+                        <li><span class="property">border-bottom:</span> 2px solid transparent;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                        <li></li>
+                        <!-- selector -->
+                        <li><span class="selector">.link:hover, </span></li>
+                        <li><span class="selector">.link:active </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">color:</span> #ff9f4b;</li>
+                        <li><span class="property">border-bottom:</span> 2px solid currentColor;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+                </section> <!-- end link section -->
+
+                <!-- list -->
+                <section class="rules mb-80" id="section6" data-section='section6'>
+                    <h3 id="list" class="h33 headerBottom">Lists:</h3>
+                    <div>
+                        <p class="elements-description"><span class="hand">&#9755;</span> Class for unordered HTML
+                            list
+                            <code>.list</code>, we also have an ordered HTML list
+                        </p>
+                        <p class="elements-description"><span class="hand">&#9755;</span> The li tag defines a list
+                            item. Class for list item <code>.list-item</code>
+                        </p>
+                    </div>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
+                        <div class="rules-header">
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('listHTMLRule')">Copy code</button>
+                        </div>
+                        <div class="html">
+                            <ul class="rules-content" id="listHTMLRule">
+                                <!-- open ul tag -->
+                                <li><span class="openUl"></span></li>
+                                <!-- li tag -->
+                                <li><span class="ml-30"><span class="openLi"></span> . . . <span
+                                            class="closeLi"></span></span></li>
+                                <!-- close ul tag -->
+                                <li><span class="closeUl"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('listRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="listRule">
+                        <!-- selector -->
+                        <li><span class="selector">.list </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">display:</span> flex;</li>
+                        <li><span class="property">flex-direction:</span> column;</li>
+                        <li><span class="property">list-style:</span> none;</li>
+                        <li><span class="property">gap:</span> 1.6rem;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                        <li></li>
+                        <!-- selector -->
+                        <li><span class="selector">.list-item </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">font-size:</span> 1.8rem;</li>
+                        <li><span class="property">display:</span> none;</li>
+                        <li><span class="property">align-items:</span> center;</li>
+                        <li><span class="property">gap:</span> 1.6rem;</li>
+                        <li><span class="property">line-height:</span> 1.2;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+                </section> <!-- end list section -->
+
+                <!-- buttons -->
+                <section class="rules mb-80" id="section7" data-section='section7'>
+                    <h3 id="btn" class="h33 headerBottom">Buttons:</h3>
+                    <div>
+                        <p class="elements-description"><span class="hand">&#9755;</span> Class for button
+                            <code>.btn</code>
+                        </p>
+                    </div>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
+                        <div class="rules-header">
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('btnHTMLRule')">Copy code</button>
+                        </div>
+                        <div class="html">
+                            <ul class="rules-content" id="btnHTMLRule">
+                                <!-- button a tag -->
+                                <li><span><span class="commentBtnA"></span></span></li>
+                                <li><span><span class="openBtnA"></span>Click<span class="closeBtnA"></span></span>
+                                </li>
+
+                                <li></li>
+
+                                <!-- button tag -->
+                                <li><span><span class="commentBtn"></span></span></li>
+                                <li><span><span class="openBtn"></span>Click<span class="closeBtn"></span></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('btnRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="btnRule">
+                        <!-- selector -->
+                        <li><span class="selector">.btn </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">display:</span> inline-block;</li>
+                        <li><span class="property">margin:</span> 0.4rem 0;</li>
+                        <li><span class="property">padding:</span> 1.6rem 3rem 1.4rem;</li>
+                        <li><span class="property">font-size:</span> 1.2rem;</li>
+                        <li><span class="property">text-align:</span> center;</li>
+                        <li><span class="property">font-weight:</span> 500;</li>
+                        <li><span class="property">text-decoration:</span> none;</li>
+                        <li><span class="property">letter-spacing:</span> 1px;</li>
+                        <li><span class="property">text-transform:</span> uppercase;</li>
+                        <li><span class="property">border:</span> none;</li>
+                        <li><span class="property">border-radius:</span> 10px;</li>
+                        <li><span class="property">transition-duration:</span> 0.4s;</li>
+                        <li><span class="property">cursor:</span> pointer;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+
+                    <!-- color button -->
+                    <div>
+                        <h4 class="h44">Color button</h4>
+                        <p class="elements-description"><span class="hand">&#9755;</span> Class for olor button
+                            <code>.btn-full</code>
+                        </p>
+                    </div>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
+                        <div class="rules-header">
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('btnColorHTMLRule')">Copy code</button>
+                        </div>
+                        <div class="html">
+                            <ul class="rules-content" id="btnColorHTMLRule">
+                                <!-- button a tag -->
+                                <li><span><span class="commentColorBtnA"></span></span></li>
+                                <li><span><span class="openColorBtnA"></span>Click<span
+                                            class="closeColorBtnA"></span></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('btnColorRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="btnColorRule">
+                        <!-- comment -->
+                        <li><span class="comment">/* color button */</span></li>
+                        <!-- selector -->
+                        <li><span class="selector">.btn-full </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">background-color:</span> #555555;</li>
+                        <li><span class="property">color:</span> #fff;</li>
+                        <li><span class="property">border:</span> 1px solid transparent;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                        <!-- emty -->
+                        <li></li>
+                        <!-- selector -->
+                        <li><span class="selector">.btn-full:hover </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">background-color:</span> #fff;</li>
+                        <li><span class="property">color:</span> #000;</li>
+                        <li><span class="property">border:</span> 1px solid #555555;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+
+                    <!-- trensparent button -->
+                    <div>
+                        <h4 class="h44">Transparent button</h4>
+                        <p class="elements-description"><span class="hand">&#9755;</span> Class for transparent
+                            button
+                            <code>.btn-ghost</code>
+                        </p>
+                    </div>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
+                        <div class="rules-header">
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('btnTranHTMLRule')">Copy code</button>
+                        </div>
+                        <div class="html">
+                            <ul class="rules-content" id="btnTranHTMLRule">
+                                <!-- button a tag -->
+                                <li>
+                                    <span class="commentTranBtnA"></span>
+                                </li>
+                                <li><span><span class="openTranBtnA"></span>Click<span
+                                            class="closeTranBtnA"></span></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('btnTranRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="btnTranRule">
+                        <!-- comment -->
+                        <li><span class="comment">/* transparent button */</span></li>
+                        <!-- selector -->
+                        <li><span class="selector">.btn-ghost </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">background-color:</span> transparent;</li>
+                        <li><span class="property">color:</span> #000;</li>
+                        <li><span class="property">border:</span> 1px solid #555555;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                        <!-- emty -->
+                        <li></li>
+                        <!-- selector -->
+                        <li><span class="selector">.btn-ghost:hover </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">background-color:</span> #555555;</li>
+                        <li><span class="property">color:</span> #fff;</li>
+                        <li><span class="property">border:</span> 1px solid transparent;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+                </section> <!-- end buttons section -->
+
+                <!-- images -->
+                <section class="rules mb-80" id="section8" data-section='section8'>
+                    <h3 id="img" class="h33 headerBottom">Images:</h3>
+                    <p class="elements-description"><span class="hand">&#9755;</span> The img tag has two required
+                        attributes: <code>src</code>- Specifies the path to the image, and: <code>alt </code>-
+                        Specifies
+                        an alternate text for the image, if the image for some reason cannot be displayed
+                    </p>
+                    <p class="elements-description"><span class="hand">&#9755;</span> Class for image
+                        <code>.img</code>
+                    </p>
+                    <p class="elements-description"><span class="hand">&#9755;</span> To link an image to another
+                        document, simply nest the img tag inside an a tag
+                    </p>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
+                        <div class="rules-header">
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('imgHTMLRule')">Copy code</button>
+                        </div>
+                        <div class="html">
+                            <ul class="rules-content" id="imgHTMLRule">
+                                <!-- img tag -->
+                                <li><span class="tagImg"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('imgRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="imgRule">
+                        <!-- selector -->
+                        <li><span class="selector">.img </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">vertical-align:</span> bottom;</li>
+                        <li><span class="property">max-width:</span> 100%;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+                </section> <!-- end images section -->
+
+                <!-- icon -->
+                <section class="rules mb-80" id="section9" data-section='section9'>
+                    <h3 id="icon" class="h33 headerBottom">Icons:</h3>
+                    <!-- icon big -->
+                    <div>
+                        <h4 class="h44">Big icon</h4>
+                        <p class="elements-description"><span class="hand">&#9755;</span> Class for big icon
+                            <code>.icon-big</code>
+                        </p>
+                    </div>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
+                        <div class="rules-header">
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('iconBgHTMLRule')">Copy code</button>
+                        </div>
+                        <div class="html">
+                            <ul class="rules-content" id="iconBgHTMLRule">
+                                <li><span class="openBgSvg"></span> ... <span class="closeSvg"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('iconBgRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="iconBgRule">
+                        <!-- comment -->
+                        <!-- <li><span class="comment">/* color button */</span></li> -->
+                        <!-- selector -->
+                        <li><span class="selector">.icon-big </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">font-size:</span> 300%;</li>
+                        <li><span class="property">display:</span> block;</li>
+                        <li><span class="property">margin-bottom:</span> 1rem;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+
+                    <!-- icon small -->
+                    <div>
+                        <h4 class="h44">Small icon</h4>
+                        <p class="elements-description"><span class="hand">&#9755;</span> Class for small icon
+                            <code>.icon-small</code>
+                        </p>
+                    </div>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
+                        <div class="rules-header">
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('iconSmHTMLRule')">Copy code</button>
+                        </div>
+                        <div class="html">
+                            <ul class="rules-content" id="iconSmHTMLRule">
+                                <li><span class="openSmSvg"></span> ... <span class="closeSvg"></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('iconSmRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="iconSmRule">
+                        <!-- comment -->
+                        <!-- <li><span class="comment">/* transparent button */</span></li> -->
+                        <!-- selector -->
+                        <li><span class="selector">.icon-small </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">color:</span> var(--icon-color);</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+                </section> <!-- end icon section -->
+            </article> <!-- END ELEMENTS -->
+
             <!-- BOX MODELS -->
-            <article class="navbar-item">
-                <div class="navbar-item-title">
-                    <svg class="box-model-color" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_2" x="0px" y="0px"
-                        viewBox="0 0 50 46.5" style="enable-background:new 0 0 50 46.5;" xml:space="preserve">
-                        <polygon points="4.2,8.5 25,0 45.2,8.5 24.7,17.4 " />
-                        <polygon points="0,11.9 21.4,20.8 21.4,46.5 0,37.5 " />
-                        <polygon points="29,20.6 50,11.9 50,37.6 28.6,46.5 " />
-                    </svg>
-                    <a class="title-navbar box-model-color" href="#box-models">Box models</a>
-                </div>
-                <ul class="list ">
-                    <li class="list-item"><a class="link linkA" href="#display" data-section='11'>Display</a></li>
-                    <li class="list-item"><a class="link linkA" href="#position" data-section='12'>Position</a></li>
-                    <li class="list-item"><a class="link linkA" href="#margin" data-section='13'>Margins</a></li>
-                    <li class="list-item"><a class="link linkA" href="#padding" data-section='14'>Paddings</a></li>
-                    <li class="list-item"><a class="link linkA" href="#intr-sec" data-section='09'>Intersections</a>
-                    </li>
-                    <li class="list-item"><a class="link linkA" href="#cursor" data-section='15'>Cursor</a></li>
-                </ul>
-            </article> <!-- END BOX MODELS -->
-        </section> <!-- END NAVBAR -->
+            <article id="titleNavbar3" class="description-technics" data-section="titleNavbar3">
+                <h2 id="box-models" class="h22 box-model-color">Box models</h2>
+                <img src="img/border/border-1-row.png" class="border-1-row" alt="Border for page">
 
-        <!-- DESCRIPTIONS ================================== -->
-        <section id="description" class="description">
-            <!-- layout for description tag -->
-            <div class="description-layout">
-                <!-- LAYOUT -->
-                <article class="description-technics">
-                    <h2 id="layout" class="h22 layout-color">Layout</h2>
-                    <img src="img/border/border-1-row.png" class="border-1-row" alt="Border for page">
-                    <!-- content -->
-                    <section class="rules mb-80" data-section='01'>
-                        <h3 id="container" class="h33 headerBottom">Container:</h3>
-                        <p class="elements-description"><span class="hand">&#9755;</span> The
-                            <code>.container</code> class is used to define the styles
-                            for the
-                            container
-                            element.
+                <!-- display -->
+                <section class="rules mb-80" id="section10" data-section='section10'>
+                    <h3 id="display" class="h33 headerBottom">Didpley:</h3>
+                    <div>
+                        <h4 class="h44">Subtitle</h4>
+                        <p class="elements-description"><span class="hand">&#9755;</span> Put a short description
+                            <code>.class or id</code>
                         </p>
-                        <p class="elements-description"><span class="hand">&#9755;</span> <code>width</code> and
-                            <code>max-width</code> are set to control the width of the
-                            container.
-                            <code>max-width</code> ensures that the container won't exceed a certain width, especially
-                            on
-                            larger screens.
+                    </div>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
+                        <div class="rules-header">
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('displayHTMLRule')">Copy code</button>
+                        </div>
+                        <div class="html">
+                            <ul class="rules-content" id="displayHTMLRule">
+                                <!-- emty tag -->
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('displayRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="displayRule">
+                        <!-- comment -->
+                        <li><span class="comment">/* comment optionally */</span></li>
+                        <!-- selector -->
+                        <li><span class="selector">selector </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">property:</span> value;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+                </section> <!-- end display section -->
+
+                <!-- position -->
+                <section class="rules mb-80" id="section11" data-section='section11'>
+                    <h3 id="position" class="h33 headerBottom">Position:</h3>
+                    <div>
+                        <h4 class="h44">Subtitle</h4>
+                        <p class="elements-description"><span class="hand">&#9755;</span> Put a short description
+                            <code>.class or id</code>
                         </p>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('containerHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="containerHTMLRule">
-                                    <!-- open div tag -->
-                                    <li><span class="openDiv"></li>
-                                    <!-- emty tag -->
-                                    <li><span class="ml-30">content, content, content</span></li>
-                                    <li><span class="ml-30">content, content, content</span></li>
-                                    <li><span class="ml-30">content, content, content</span></li>
-                                    <!-- close div tag -->
-                                    <li><span class="closeDiv"></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
+                    </div>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
                         <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('containerRule')">Copy code</button>
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('positionHTMLRule')">Copy code</button>
                         </div>
-                        <ul class="rules-content mb" id="containerRule">
-                            <!-- comment -->
-                            <li><span class="comment">/* 120px * 10px = 1200px */</span></li>
-                            <!-- selector -->
-                            <li><span class="selector">.container </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">width:</span> 80%;</li>
-                            <li><span class="property">max-width:</span> 120em;</li>
-                            <li><span class="property">margin:</span> 0 auto;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-                    </section> <!-- end content -->
+                        <div class="html">
+                            <ul class="rules-content" id="positionHTMLRule">
+                                <!-- emty tag -->
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('positionRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="positionRule">
+                        <!-- comment -->
+                        <li><span class="comment">/* comment optionally */</span></li>
+                        <!-- selector -->
+                        <li><span class="selector">selector </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">property:</span> value;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+                </section> <!-- end position section -->
 
-                    <!-- grid -->
-                    <section class="rules mb-80" data-section='02'>
-                        <h3 id="grid" class="h33 headerBottom">Grid:</h3>
-                        <p class="elements-description"><span class="hand">&#9755;</span> The CSS Grid Layout Module
-                            offers
-                            a grid-based layout system, with rows and columns, making it easier to design web pages
-                            without
-                            having to use floats and positioning.
+                <!-- margin -->
+                <section class="rules mb-80" id="section12" data-section='section12'>
+                    <h3 id="margin" class="h33 headerBottom">Margins:</h3>
+                    <div>
+                        <h4 class="h44">Subtitle</h4>
+                        <p class="elements-description"><span class="hand">&#9755;</span> Put a short description
+                            <code>.class or id</code>
                         </p>
-                        <p class="elements-description"><span class="hand">&#9755;</span> Class for grid:
-                            <code>.grid</code>
+                    </div>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
+                        <div class="rules-header">
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('marginHTMLRule')">Copy code</button>
+                        </div>
+                        <div class="html">
+                            <ul class="rules-content" id="marginHTMLRule">
+                                <!-- emty tag -->
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('marginRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="marginRule">
+                        <!-- comment -->
+                        <li><span class="comment">/* comment optionally */</span></li>
+                        <!-- selector -->
+                        <li><span class="selector">selector </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">property:</span> value;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+                </section> <!-- end margin section -->
+
+                <!-- padding -->
+                <section class="rules mb-80" id="section13" data-section='section13'>
+                    <h3 id="padding" class="h33 headerBottom">Paddings:</h3>
+                    <div>
+                        <h4 class="h44">Subtitle</h4>
+                        <p class="elements-description"><span class="hand">&#9755;</span> Put a short description
+                            <code>.class or id</code>
                         </p>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('gridHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="gridHTMLRule">
-                                    <!-- open div tag grid -->
-                                    <li><span class="openDivGrid"></span></li>
-                                    <!-- empty tag -->
-                                    <li></li>
-                                    <!-- close div tag grid -->
-                                    <li><span class="closeDiv"></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
+                    </div>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
                         <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('gridRule')">Copy code</button>
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('paddingHTMLRule')">Copy code</button>
                         </div>
-                        <ul class="rules-content mb" id="gridRule">
-                            <!-- selector -->
-                            <li><span class="selector">.grid </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">display:</span> grid;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-                    </section> <!-- end grid -->
+                        <div class="html">
+                            <ul class="rules-content" id="paddingHTMLRule">
+                                <!-- emty tag -->
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('paddingRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="paddingRule">
+                        <!-- comment -->
+                        <li><span class="comment">/* comment optionally */</span></li>
+                        <!-- selector -->
+                        <li><span class="selector">selector </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">property:</span> value;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+                </section> <!-- end padding section -->
 
-                    <!-- flex -->
-                    <section class="rules mb-80" data-section='03'>
-                        <h3 id="flex" class="h33 headerBottom">Flex:</h3>
-                        <p class="elements-description"><span class="hand">&#9755;</span> The Flexible Box Layout
-                            Module,
-                            makes it easier to design flexible responsive layout structure without using float or
-                            positioning.
+                <!-- intersections -->
+                <section class="rules mb-80" id="section14" data-section='section14'>
+                    <h3 id="intr-sec" class="h33 headerBottom">Intersections:</h3>
+                    <div>
+                        <h4 class="h44">Subtitle</h4>
+                        <p class="elements-description"><span class="hand">&#9755;</span> It is intended to be used
+                            between
+                            sections and effects on sections with pseudo elements before <code>::before</code> and
+                            after
+                            <code>::after</code>
                         </p>
-                        <p class="elements-description"><span class="hand">&#9755;</span> Class for flex:
-                            <code>.flex</code>
+                    </div>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
+                        <div class="rules-header">
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('interSecHTMLRule')">Copy code</button>
+                        </div>
+                        <div class="html">
+                            <ul class="rules-content" id="interSecHTMLRule">
+                                <!-- emty tag -->
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('interSecRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="interSecRule">
+                        <!-- comment -->
+                        <li><span class="comment">/* comment optionally */</span></li>
+                        <!-- selector -->
+                        <li><span class="selector">selector </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">property:</span> value;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+                </section> <!-- end intersections section -->
+
+                <!-- cursor -->
+                <section class="rules mb-80" id="section15" data-section='section15'>
+                    <h3 id="cursor" class="h33 headerBottom">Cursor:</h3>
+                    <div>
+                        <h4 class="h44">Subtitle</h4>
+                        <p class="elements-description"><span class="hand">&#9755;</span> Put a short description
+                            <code>.class or id</code>
                         </p>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('flexHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="flexHTMLRule">
-                                    <!-- open div tag flex -->
-                                    <li><span class="openDivFlex"></span></li>
-                                    <!-- empty tag -->
-                                    <li></li>
-                                    <!-- close div tag flex -->
-                                    <li><span class="closeDiv"></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
+                    </div>
+                    <!-- HTML Element -->
+                    <div class="mtb witdh">
                         <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('flexRule')">Copy code</button>
+                            <p class="rules-header-p">html</p>
+                            <button class="copyButton" onclick="copyCssRule('cursorHTMLRule')">Copy code</button>
                         </div>
-                        <ul class="rules-content mb" id="flexRule">
-                            <!-- selector -->
-                            <li><span class="selector">.flex </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">display:</span> flex;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-                    </section> <!-- end flex -->
-                </article> <!-- END LAYOUT -->
-                <!-- ELEMENTS -->
-                <article class="description-technics">
-                    <h2 id="elements" class="h22 element-color">Elements</h2>
-                    <img src="img/border/border-1-row.png" class="border-1-row" alt="Border for page">
+                        <div class="html">
+                            <ul class="rules-content" id="cursorHTMLRule">
+                                <!-- emty tag -->
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- CSS Style -->
+                    <div class="rules-header">
+                        <p class="rules-header-p">css</p>
+                        <button class="copyButton" onclick="copyCssRule('cursorRule')">Copy code</button>
+                    </div>
+                    <ul class="rules-content mb" id="cursorRule">
+                        <!-- comment -->
+                        <li><span class="comment">/* comment optionally */</span></li>
+                        <!-- selector -->
+                        <li><span class="selector">selector </span>{</li>
+                        <!-- property -->
+                        <li><span class="property">property:</span> value;</li>
+                        <!-- end selector -->
+                        <li>}</li>
+                    </ul>
+                </section> <!-- end cursor section -->
+            </article> <!-- END BOX MODELS-->
 
-                    <!-- typography -->
-                    <section class="rules mb-80" data-section='04'>
-                        <h3 id="typography" class="h33 headerBottom">Typography:</h3>
-
-                        <!-- heading -->
-                        <div>
-                            <h4 class="h44">HTML Heading</h4>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Class for h1:
-                                <code>.h1</code>
-                            </p>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Class for h2:
-                                <code>.h2</code>
-                            </p>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Class for h3:
-                                <code>.h3</code>
-                            </p>
-                        </div>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('headingHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="headingHTMLRule">
-                                    <!-- heading 1 tag -->
-                                    <li><span class="openHeading1"></span>h1<span class="closeHeading1"></span></li>
-                                    <!-- empty tag -->
-                                    <li></li>
-                                    <!-- heading 2 tag -->
-                                    <li><span class="openHeading2"></span>h1<span class="closeHeading2"></span></li>
-                                    <!-- empty tag -->
-                                    <li></li>
-                                    <!-- heading 3 tag -->
-                                    <li><span class="openHeading3"></span>h1<span class="closeHeading3"></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
-                        <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('hRule')">Copy code</button>
-                        </div>
-                        <ul class="rules-content mb" id="hRule">
-                            <!-- selector h1 -->
-                            <li><span class="selector">.h1 </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">font-size:</span> 1.6rem;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                            <!-- empty tag -->
-                            <li></li>
-                            <!-- selector h2 -->
-                            <li><span class="selector">.h2 </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">font-size:</span> 1.6rem;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                            <!-- empty tag -->
-                            <li></li>
-                            <!-- selector h3 -->
-                            <li><span class="selector">.h3 </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">font-size:</span> 1.6rem;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-
-                        <!-- paragraph -->
-                        <div>
-                            <h4 class="h44">HTML Paragraphs</h4>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Class for paragraph small:
-                                <code>.p-sm</code>
-                            </p>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Class for paragraph:
-                                <code>.p</code>
-                            </p>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Class for paragraph large:
-                                <code>.p-lg</code>
-                            </p>
-                        </div>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('paragraphHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="paragraphHTMLRule">
-                                    <!-- p-sm tag -->
-                                    <li><span class="openParagraphsSm"></span>p-sm<span class="closeParagraphs"></span>
-                                    </li>
-                                    <!-- empty tag -->
-                                    <li></li>
-                                    <!-- p tag -->
-                                    <li><span class="openParagraphs"></span>p<span class="closeParagraphs"></span></li>
-                                    <!-- empty tag -->
-                                    <li></li>
-                                    <!-- p-lg tag -->
-                                    <li><span class="openParagraphsLg"></span>p-lg<span class="closeParagraphs"></span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
-                        <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('pRule')">Copy code</button>
-                        </div>
-                        <ul class="rules-content mb" id="pRule">
-                            <!-- selector p-sm -->
-                            <li><span class="selector">.p-sm </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">font-size:</span> 1.6rem;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                            <!-- empty tag -->
-                            <li></li>
-                            <!-- selector p -->
-                            <li><span class="selector">.p </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">font-size:</span> 1.6rem;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                            <!-- empty tag -->
-                            <li></li>
-                            <!-- selector p-lg -->
-                            <li><span class="selector">.p-lg </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">font-size:</span> 1.6rem;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-                    </section> <!-- end typography -->
-
-                    <!-- link -->
-                    <section class="rules mb-80" data-section='05'>
-                        <h3 id="link" class="h33 headerBottom">Hyperlinks:</h3>
-                        <div>
-                            <p class="elements-description"><span class="hand">&#9755;</span> The a tag defines a
-                                hyperlink,
-                                which is used to link from one page to another. Class for hyperlink <code>.link</code>
-                            </p>
-                            <p class="elements-description"><span class="hand">&#9755;</span> The most important
-                                attribute
-                                of the a element is the <code>href</code> attribute, which indicates the link's
-                                destination.
-                                We also have optional attribute <code>target</code>
-                            </p>
-                        </div>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('linkHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="linkHTMLRule">
-                                    <!-- a tag -->
-                                    <li><span class="openA"></span>Link<span class="closeA"></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
-                        <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('linkRule')">Copy code</button>
-                        </div>
-                        <ul class="rules-content mb" id="linkRule">
-                            <!-- selector -->
-                            <li><span class="selector">.link:link, </span></li>
-                            <li><span class="selector">.link:visited </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">display:</span> inline-block;</li>
-                            <li><span class="property">color:</span> #e67e22;</li>
-                            <li><span class="property">text-decoration:</span> none;</li>
-                            <li><span class="property">transition:</span> all 0.3s;</li>
-                            <li><span class="property">border-bottom:</span> 2px solid transparent;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                            <li></li>
-                            <!-- selector -->
-                            <li><span class="selector">.link:hover, </span></li>
-                            <li><span class="selector">.link:active </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">color:</span> #ff9f4b;</li>
-                            <li><span class="property">border-bottom:</span> 2px solid currentColor;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-                    </section> <!-- end link -->
-
-                    <!-- list -->
-                    <section class="rules mb-80" data-section='06'>
-                        <h3 id="list" class="h33 headerBottom">Lists:</h3>
-                        <div>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Class for unordered HTML
-                                list
-                                <code>.list</code>, we also have an ordered HTML list
-                            </p>
-                            <p class="elements-description"><span class="hand">&#9755;</span> The li tag defines a list
-                                item. Class for list item <code>.list-item</code>
-                            </p>
-                        </div>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('listHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="listHTMLRule">
-                                    <!-- open ul tag -->
-                                    <li><span class="openUl"></span></li>
-                                    <!-- li tag -->
-                                    <li><span class="ml-30"><span class="openLi"></span> . . . <span
-                                                class="closeLi"></span></span></li>
-                                    <!-- close ul tag -->
-                                    <li><span class="closeUl"></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
-                        <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('listRule')">Copy code</button>
-                        </div>
-                        <ul class="rules-content mb" id="listRule">
-                            <!-- selector -->
-                            <li><span class="selector">.list </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">display:</span> flex;</li>
-                            <li><span class="property">flex-direction:</span> column;</li>
-                            <li><span class="property">list-style:</span> none;</li>
-                            <li><span class="property">gap:</span> 1.6rem;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                            <li></li>
-                            <!-- selector -->
-                            <li><span class="selector">.list-item </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">font-size:</span> 1.8rem;</li>
-                            <li><span class="property">display:</span> none;</li>
-                            <li><span class="property">align-items:</span> center;</li>
-                            <li><span class="property">gap:</span> 1.6rem;</li>
-                            <li><span class="property">line-height:</span> 1.2;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-                    </section> <!-- end list -->
-
-                    <!-- btn -->
-                    <section class="rules mb-80" data-section='07'>
-                        <h3 id="btn" class="h33 headerBottom">Buttons:</h3>
-                        <div>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Class for button
-                                <code>.btn</code>
-                            </p>
-                        </div>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('btnHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="btnHTMLRule">
-                                    <!-- button a tag -->
-                                    <li><span><span class="commentBtnA"></span></span></li>
-                                    <li><span><span class="openBtnA"></span>Click<span class="closeBtnA"></span></span>
-                                    </li>
-
-                                    <li></li>
-
-                                    <!-- button tag -->
-                                    <li><span><span class="commentBtn"></span></span></li>
-                                    <li><span><span class="openBtn"></span>Click<span class="closeBtn"></span></span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
-                        <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('btnRule')">Copy code</button>
-                        </div>
-                        <ul class="rules-content mb" id="btnRule">
-                            <!-- selector -->
-                            <li><span class="selector">.btn </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">display:</span> inline-block;</li>
-                            <li><span class="property">margin:</span> 0.4rem 0;</li>
-                            <li><span class="property">padding:</span> 1.6rem 3rem 1.4rem;</li>
-                            <li><span class="property">font-size:</span> 1.2rem;</li>
-                            <li><span class="property">text-align:</span> center;</li>
-                            <li><span class="property">font-weight:</span> 500;</li>
-                            <li><span class="property">text-decoration:</span> none;</li>
-                            <li><span class="property">letter-spacing:</span> 1px;</li>
-                            <li><span class="property">text-transform:</span> uppercase;</li>
-                            <li><span class="property">border:</span> none;</li>
-                            <li><span class="property">border-radius:</span> 10px;</li>
-                            <li><span class="property">transition-duration:</span> 0.4s;</li>
-                            <li><span class="property">cursor:</span> pointer;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-
-                        <!-- color button -->
-                        <div>
-                            <h4 class="h44">Color button</h4>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Class for olor button
-                                <code>.btn-full</code>
-                            </p>
-                        </div>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('btnColorHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="btnColorHTMLRule">
-                                    <!-- button a tag -->
-                                    <li><span><span class="commentColorBtnA"></span></span></li>
-                                    <li><span><span class="openColorBtnA"></span>Click<span
-                                                class="closeColorBtnA"></span></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
-                        <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('btnColorRule')">Copy code</button>
-                        </div>
-                        <ul class="rules-content mb" id="btnColorRule">
-                            <!-- comment -->
-                            <li><span class="comment">/* color button */</span></li>
-                            <!-- selector -->
-                            <li><span class="selector">.btn-full </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">background-color:</span> #555555;</li>
-                            <li><span class="property">color:</span> #fff;</li>
-                            <li><span class="property">border:</span> 1px solid transparent;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                            <!-- emty -->
-                            <li></li>
-                            <!-- selector -->
-                            <li><span class="selector">.btn-full:hover </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">background-color:</span> #fff;</li>
-                            <li><span class="property">color:</span> #000;</li>
-                            <li><span class="property">border:</span> 1px solid #555555;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-
-                        <!-- trensparent button -->
-                        <div>
-                            <h4 class="h44">Transparent button</h4>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Class for transparent
-                                button
-                                <code>.btn-ghost</code>
-                            </p>
-                        </div>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('btnTranHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="btnTranHTMLRule">
-                                    <!-- button a tag -->
-                                    <li>
-                                        <span class="commentTranBtnA"></span>
-                                    </li>
-                                    <li><span><span class="openTranBtnA"></span>Click<span
-                                                class="closeTranBtnA"></span></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
-                        <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('btnTranRule')">Copy code</button>
-                        </div>
-                        <ul class="rules-content mb" id="btnTranRule">
-                            <!-- comment -->
-                            <li><span class="comment">/* transparent button */</span></li>
-                            <!-- selector -->
-                            <li><span class="selector">.btn-ghost </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">background-color:</span> transparent;</li>
-                            <li><span class="property">color:</span> #000;</li>
-                            <li><span class="property">border:</span> 1px solid #555555;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                            <!-- emty -->
-                            <li></li>
-                            <!-- selector -->
-                            <li><span class="selector">.btn-ghost:hover </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">background-color:</span> #555555;</li>
-                            <li><span class="property">color:</span> #fff;</li>
-                            <li><span class="property">border:</span> 1px solid transparent;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-
-                    </section> <!-- end btn -->
-
-                    <!-- img -->
-                    <section class="rules mb-80" data-section='08'>
-                        <h3 id="img" class="h33 headerBottom">Images:</h3>
-                        <p class="elements-description"><span class="hand">&#9755;</span> The img tag has two required
-                            attributes: <code>src</code>- Specifies the path to the image, and: <code>alt </code>-
-                            Specifies
-                            an alternate text for the image, if the image for some reason cannot be displayed
-                        </p>
-                        <p class="elements-description"><span class="hand">&#9755;</span> Class for image
-                            <code>.img</code>
-                        </p>
-                        <p class="elements-description"><span class="hand">&#9755;</span> To link an image to another
-                            document, simply nest the img tag inside an a tag
-                        </p>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('imgHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="imgHTMLRule">
-                                    <!-- img tag -->
-                                    <li><span class="tagImg"></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
-                        <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('imgRule')">Copy code</button>
-                        </div>
-                        <ul class="rules-content mb" id="imgRule">
-                            <!-- selector -->
-                            <li><span class="selector">.img </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">vertical-align:</span> bottom;</li>
-                            <li><span class="property">max-width:</span> 100%;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-                    </section> <!-- end img -->
-
-                    <!-- icon -->
-                    <section class="rules mb-80" data-section='10'>
-                        <h3 id="icon" class="h33 headerBottom">Icons:</h3>
-                        <!-- icon big -->
-                        <div>
-                            <h4 class="h44">Big icon</h4>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Class for big icon
-                                <code>.icon-big</code>
-                            </p>
-                        </div>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('iconBgHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="iconBgHTMLRule">
-                                    <li><span class="openBgSvg"></span> ... <span class="closeSvg"></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
-                        <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('iconBgRule')">Copy code</button>
-                        </div>
-                        <ul class="rules-content mb" id="iconBgRule">
-                            <!-- comment -->
-                            <!-- <li><span class="comment">/* color button */</span></li> -->
-                            <!-- selector -->
-                            <li><span class="selector">.icon-big </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">font-size:</span> 300%;</li>
-                            <li><span class="property">display:</span> block;</li>
-                            <li><span class="property">margin-bottom:</span> 1rem;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-
-                        <!-- icon small -->
-                        <div>
-                            <h4 class="h44">Small icon</h4>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Class for small icon
-                                <code>.icon-small</code>
-                            </p>
-                        </div>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('iconSmHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="iconSmHTMLRule">
-                                    <li><span class="openSmSvg"></span> ... <span class="closeSvg"></span></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
-                        <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('iconSmRule')">Copy code</button>
-                        </div>
-                        <ul class="rules-content mb" id="iconSmRule">
-                            <!-- comment -->
-                            <!-- <li><span class="comment">/* transparent button */</span></li> -->
-                            <!-- selector -->
-                            <li><span class="selector">.icon-small </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">color:</span> var(--icon-color);</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-                    </section> <!-- end icon -->
-
-                </article> <!-- END ELEMENTS -->
-                <!-- BOX MODELS -->
-                <article class="description-technics">
-                    <h2 id="box-models" class="h22 box-model-color">Box models</h2>
-                    <img src="img/border/border-1-row.png" class="border-1-row" alt="Border for page">
-
-                    <!-- display -->
-                    <section class="rules mb-80" data-section='11'>
-                        <h3 id="display" class="h33 headerBottom">Didpley:</h3>
-                        <div>
-                            <h4 class="h44">Subtitle</h4>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Put a short description
-                                <code>.class or id</code>
-                            </p>
-                        </div>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('displayHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="displayHTMLRule">
-                                    <!-- emty tag -->
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
-                        <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('displayRule')">Copy code</button>
-                        </div>
-                        <ul class="rules-content mb" id="displayRule">
-                            <!-- comment -->
-                            <li><span class="comment">/* comment optionally */</span></li>
-                            <!-- selector -->
-                            <li><span class="selector">selector </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">property:</span> value;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-                    </section> <!-- end display -->
-
-                    <!-- position -->
-                    <section class="rules mb-80" data-section='12'>
-                        <h3 id="position" class="h33 headerBottom">Position:</h3>
-                        <div>
-                            <h4 class="h44">Subtitle</h4>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Put a short description
-                                <code>.class or id</code>
-                            </p>
-                        </div>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('positionHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="positionHTMLRule">
-                                    <!-- emty tag -->
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
-                        <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('positionRule')">Copy code</button>
-                        </div>
-                        <ul class="rules-content mb" id="positionRule">
-                            <!-- comment -->
-                            <li><span class="comment">/* comment optionally */</span></li>
-                            <!-- selector -->
-                            <li><span class="selector">selector </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">property:</span> value;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-                    </section> <!-- end position -->
-
-                    <!-- margin -->
-                    <section class="rules mb-80" data-section='13'>
-                        <h3 id="margin" class="h33 headerBottom">Margins:</h3>
-                        <div>
-                            <h4 class="h44">Subtitle</h4>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Put a short description
-                                <code>.class or id</code>
-                            </p>
-                        </div>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('marginHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="marginHTMLRule">
-                                    <!-- emty tag -->
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
-                        <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('marginRule')">Copy code</button>
-                        </div>
-                        <ul class="rules-content mb" id="marginRule">
-                            <!-- comment -->
-                            <li><span class="comment">/* comment optionally */</span></li>
-                            <!-- selector -->
-                            <li><span class="selector">selector </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">property:</span> value;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-                    </section> <!-- end margin -->
-
-                    <!-- padding -->
-                    <section class="rules mb-80" data-section='14'>
-                        <h3 id="padding" class="h33 headerBottom">Paddings:</h3>
-                        <div>
-                            <h4 class="h44">Subtitle</h4>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Put a short description
-                                <code>.class or id</code>
-                            </p>
-                        </div>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('paddingHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="paddingHTMLRule">
-                                    <!-- emty tag -->
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
-                        <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('paddingRule')">Copy code</button>
-                        </div>
-                        <ul class="rules-content mb" id="paddingRule">
-                            <!-- comment -->
-                            <li><span class="comment">/* comment optionally */</span></li>
-                            <!-- selector -->
-                            <li><span class="selector">selector </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">property:</span> value;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-                    </section> <!-- end padding -->
-
-                    <!-- intr-sec -->
-                    <section class="rules mb-80" data-section='09'>
-                        <h3 id="intr-sec" class="h33 headerBottom">Intersections:</h3>
-                        <div>
-                            <h4 class="h44">Subtitle</h4>
-                            <p class="elements-description"><span class="hand">&#9755;</span> It is intended to be used
-                                between
-                                sections and effects on sections with pseudo elements before <code>::before</code> and
-                                after
-                                <code>::after</code>
-                            </p>
-                        </div>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('interSecHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="interSecHTMLRule">
-                                    <!-- emty tag -->
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
-                        <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('interSecRule')">Copy code</button>
-                        </div>
-                        <ul class="rules-content mb" id="interSecRule">
-                            <!-- comment -->
-                            <li><span class="comment">/* comment optionally */</span></li>
-                            <!-- selector -->
-                            <li><span class="selector">selector </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">property:</span> value;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-                    </section> <!-- end intr-sec -->
-
-                    <!-- cursor -->
-                    <section class="rules mb-80" data-section='15'>
-                        <h3 id="cursor" class="h33 headerBottom">Cursor:</h3>
-                        <div>
-                            <h4 class="h44">Subtitle</h4>
-                            <p class="elements-description"><span class="hand">&#9755;</span> Put a short description
-                                <code>.class or id</code>
-                            </p>
-                        </div>
-                        <!-- HTML Element -->
-                        <div class="mtb witdh">
-                            <div class="rules-header">
-                                <p class="rules-header-p">html</p>
-                                <button class="copyButton" onclick="copyCssRule('cursorHTMLRule')">Copy code</button>
-                            </div>
-                            <div class="html">
-                                <ul class="rules-content" id="cursorHTMLRule">
-                                    <!-- emty tag -->
-                                    <li></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- CSS Style -->
-                        <div class="rules-header">
-                            <p class="rules-header-p">css</p>
-                            <button class="copyButton" onclick="copyCssRule('cursorRule')">Copy code</button>
-                        </div>
-                        <ul class="rules-content mb" id="cursorRule">
-                            <!-- comment -->
-                            <li><span class="comment">/* comment optionally */</span></li>
-                            <!-- selector -->
-                            <li><span class="selector">selector </span>{</li>
-                            <!-- property -->
-                            <li><span class="property">property:</span> value;</li>
-                            <!-- end selector -->
-                            <li>}</li>
-                        </ul>
-                    </section> <!-- end cursor -->
-
-                </article> <!-- END BOX MODELS -->
-            </div> <!-- end layout for description tag -->
-        </section> <!-- END DESCRIPTIONS -->
-
-    </main> <!-- END DESCRIPTION BODY -->
+        </div> <!-- end layout for description tag -->
+    </section> <!-- END DESCRIPTIONS -->
 
 
     <!-- SCROLL TOP / BOTTOM ================================== -->
@@ -1359,10 +1270,8 @@
     </div> <!-- END SCROLL TOP / BOTTOM Y -->
 
 
-
-    <!-- <script type="module" src="js/cc.js"></script> -->
-    <script type="module" src="js/active.js"></script>
-    <script type="module" src="js/setting.js"></script>
+    <script src="js/setting.js"></script>
+    <script src="js/observer.js"></script>
     <script src="js/search.js"></script>
     <script src="js/tags.js"></script>
     <script src="js/copy.js"></script>
