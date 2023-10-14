@@ -37,8 +37,8 @@ function scrollToSectionBottom(sectionId) {
 }
 
 // Function to simulate a click on the last "Cursor" link and remove active class from other links
+const cursorLinks = document.querySelectorAll('a[name]');
 function scrollToCursorLink() {
-    const cursorLinks = document.querySelectorAll('a[name]');
     if (cursorLinks.length > 0) {
         cursorLinks[cursorLinks.length - 1].click(); // Simulate a click on the last "Cursor" link
     }
@@ -64,6 +64,7 @@ scrollBottomButton.addEventListener('click', function () {
     scrollToSectionBottom('description');
     scrollToCursorLink();
     navbar.scrollTop = navbar.scrollHeight;
+    // cursorLinks[cursorLinks.length - 1].classList.remove('active');
 });
 
 
