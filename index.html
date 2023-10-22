@@ -13,6 +13,7 @@
     <title>Documentation</title>
 
     <link rel="stylesheet" href="css/setting.css" />
+    <link rel="stylesheet" href="css/language.css" />
     <link rel="stylesheet" href="css/theme.css" />
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/layout.css" />
@@ -27,6 +28,7 @@
     <!-- HEADER ================================== -->
     <header class="header">
         <h1 id="h1" class="heading">Description of <span class="change-h1" id="change-h1">CSS</span> usage</h1>
+        <!-- <h1 id="h1" class="heading h1"></h1> -->
 
         <div class="technicalBox">
             <span class="warningSearchText noneDisplay">Minimum three letters are required.</span>
@@ -59,6 +61,33 @@
         </header>
 
         <div class="settingContent">
+
+            <!-- language -->
+            <section class="secTheme mb-30">
+                <div class="secThemeHeader mb-15">
+                    <p class="secThemeTitle">Language</p>
+                </div>
+
+                <div class="themeCommand mb-20 prl-10">
+                    <div id="image-container" class="useTheme">
+                        <p class="settingMode">Choose</p>
+
+                        <div class="languageSection">
+                            <span id="language"></span>
+                            <div class="language noneDisplay">
+                                <button class="changeLanguageButton noneDisplay" id="srButton"
+                                    data-language="en">English</button>
+                                <button class="changeLanguageButton noneDisplay" id="enButton"
+                                    data-language="sr">Srpski</button>
+                                <button class="changeLanguageButton noneDisplay" id="ruButton"
+                                    data-language="ru">Russkiy</button>
+                            </div>
+                            <button id="chooseLanguage">&#11167;</button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
 
             <!-- theme -->
             <section class="secTheme mb-30">
@@ -342,8 +371,6 @@
                             d="M46,4v21.8H32V4H46 M48,0H30c-1.1,0-2,0.9-2,2v25.8c0,1.1,0.9,2,2,2h18c1.1,0,2-0.9,2-2V2C50,0.9,49.1,0,48,0L48,0z" />
                     </g>
                 </svg>
-                <!-- <a class="title-navbar layout-color" href="#layout">Layout</a> -->
-                <!-- <h2><a class="titleNavbar layout-color" href="#titleNavbar1" name="titleNavbar1">Layout</a></h2> -->
                 <h2><a id="layoutLink" class="titleNavbar layout-color" href="#titleNavbar1"
                         name="titleNavbar1">Layout</a></h2>
             </div>
@@ -411,22 +438,14 @@
                 <h2 id="layout" class="h22 layout-color">Layout</h2>
                 <img src="img/border/border-1-row.png" class="border-1-row" alt="Border for page">
 
-                <!-- content -->
+                <!-- SECTION 1 CONTAINER -->
                 <section class="rules mb-80" id="section1" data-section='section1'>
-                    <h3 id="container" class="h33 headerBottom">Container:</h3>
-                    <p class="elements-description"><span class="hand">&#9755;</span> The
-                        <code>.container</code> class is used to define the styles
-                        for the
-                        container
-                        element.
-                    </p>
-                    <p class="elements-description"><span class="hand">&#9755;</span> <code>width</code> and
-                        <code>max-width</code> are set to control the width of the
-                        container.
-                        <code>max-width</code> ensures that the container won't exceed a certain width, especially
-                        on
-                        larger screens.
-                    </p>
+                    <!-- description section -->
+                    <div class="section1">
+                        <h3 class="h33"></h3>
+                        <p class="elements-description"></p>
+                        <p class="elements-description"></p>
+                    </div>
                     <!-- HTML Element -->
                     <div class="mtb witdh">
                         <div class="rules-header">
@@ -452,31 +471,18 @@
                         <button class="copyButton" onclick="copyCssRule('containerRule')">Copy code</button>
                     </div>
                     <ul class="rules-content mb" id="containerRule">
-                        <!-- comment -->
-                        <li><span class="comment">/* 120px * 10px = 1200px */</span></li>
-                        <!-- selector -->
-                        <li><span class="selector">.container </span>{</li>
-                        <!-- property -->
-                        <li><span class="property">width:</span> 80%;</li>
-                        <li><span class="property">max-width:</span> 120em;</li>
-                        <li><span class="property">margin:</span> 0 auto;</li>
-                        <!-- end selector -->
-                        <li>}</li>
+                        <!-- JavaScript will insert content here from css.js -->
                     </ul>
                 </section> <!-- end content section -->
 
-                <!-- grid -->
+                <!-- SECTION 2 GRID -->
                 <section class="rules mb-80" id="section2" data-section='section2'>
-                    <h3 id="grid" class="h33 headerBottom">Grid:</h3>
-                    <p class="elements-description"><span class="hand">&#9755;</span> The CSS Grid Layout Module
-                        offers
-                        a grid-based layout system, with rows and columns, making it easier to design web pages
-                        without
-                        having to use floats and positioning.
-                    </p>
-                    <p class="elements-description"><span class="hand">&#9755;</span> Class for grid:
-                        <code>.grid</code>
-                    </p>
+                    <!-- description section -->
+                    <div class="section2">
+                        <h3 class="h33"></h3>
+                        <p class="elements-description"></p>
+                        <p class="elements-description"></p>
+                    </div>
                     <!-- HTML Element -->
                     <div class="mtb witdh">
                         <div class="rules-header">
@@ -500,26 +506,18 @@
                         <button class="copyButton" onclick="copyCssRule('gridRule')">Copy code</button>
                     </div>
                     <ul class="rules-content mb" id="gridRule">
-                        <!-- selector -->
-                        <li><span class="selector">.grid </span>{</li>
-                        <!-- property -->
-                        <li><span class="property">display:</span> grid;</li>
-                        <!-- end selector -->
-                        <li>}</li>
+                        <!-- JavaScript will insert content here from css.js -->
                     </ul>
                 </section> <!-- end grid section -->
 
-                <!-- flex -->
+                <!-- SECTION 3 FLEX  -->
                 <section class="rules mb-80" id="section3" data-section='section3'>
-                    <h3 id="flex" class="h33 headerBottom">Flex:</h3>
-                    <p class="elements-description"><span class="hand">&#9755;</span> The Flexible Box Layout
-                        Module,
-                        makes it easier to design flexible responsive layout structure without using float or
-                        positioning.
-                    </p>
-                    <p class="elements-description"><span class="hand">&#9755;</span> Class for flex:
-                        <code>.flex</code>
-                    </p>
+                    <!-- description section -->
+                    <div class="section3">
+                        <h3 class="h33"></h3>
+                        <p class="elements-description"></p>
+                        <p class="elements-description"></p>
+                    </div>
                     <!-- HTML Element -->
                     <div class="mtb witdh">
                         <div class="rules-header">
@@ -543,12 +541,7 @@
                         <button class="copyButton" onclick="copyCssRule('flexRule')">Copy code</button>
                     </div>
                     <ul class="rules-content mb" id="flexRule">
-                        <!-- selector -->
-                        <li><span class="selector">.flex </span>{</li>
-                        <!-- property -->
-                        <li><span class="property">display:</span> flex;</li>
-                        <!-- end selector -->
-                        <li>}</li>
+                        <!-- JavaScript will insert content here from css.js -->
                     </ul>
                 </section> <!-- end flex section -->
             </article> <!-- END LAYOUT -->
@@ -558,31 +551,24 @@
                 <h2 id="elements" class="h22 element-color">Elements</h2>
                 <img src="img/border/border-1-row.png" class="border-1-row" alt="Border for page">
 
-                <!-- typography -->
+                <!-- SECTION 4 TYPOGRAPHY  -->
                 <section class="rules mb-80" id="section4" data-section='section4'>
-                    <h3 id="typography" class="h33 headerBottom">Typography:</h3>
-
-                    <!-- heading -->
-                    <div>
-                        <h4 class="h44">HTML Heading</h4>
-                        <p class="elements-description"><span class="hand">&#9755;</span> Class for h1:
-                            <code>.h1</code>
-                        </p>
-                        <p class="elements-description"><span class="hand">&#9755;</span> Class for h2:
-                            <code>.h2</code>
-                        </p>
-                        <p class="elements-description"><span class="hand">&#9755;</span> Class for h3:
-                            <code>.h3</code>
-                        </p>
+                    <!-- description section -->
+                    <div class="section4">
+                        <h3 class="h33"></h3>
+                        <h4 class="h44"></h4>
+                        <p class="elements-description"></p>
+                        <p class="elements-description"></p>
+                        <p class="elements-description"></p>
                     </div>
                     <!-- HTML Element -->
                     <div class="mtb witdh">
                         <div class="rules-header">
                             <p class="rules-header-p">html</p>
-                            <button class="copyButton" onclick="copyCssRule('flexHTMLRule')">Copy code</button>
+                            <button class="copyButton" onclick="copyCssRule('typeHTMLRule')">Copy code</button>
                         </div>
                         <div class="html">
-                            <ul class="rules-content" id="flexHTMLRule">
+                            <ul class="rules-content" id="typeHTMLRule">
                                 <!-- open div tag flex -->
                                 <li><span class="openDivFlex"></span></li>
                                 <!-- empty tag -->
@@ -595,32 +581,20 @@
                     <!-- CSS Style -->
                     <div class="rules-header">
                         <p class="rules-header-p">css</p>
-                        <button class="copyButton" onclick="copyCssRule('flexRule')">Copy code</button>
+                        <button class="copyButton" onclick="copyCssRule('typeRule')">Copy code</button>
                     </div>
-                    <ul class="rules-content mb" id="flexRule">
-                        <!-- selector -->
-                        <li><span class="selector">.flex </span>{</li>
-                        <!-- property -->
-                        <li><span class="property">display:</span> flex;</li>
-                        <!-- end selector -->
-                        <li>}</li>
+                    <ul class="rules-content mb" id="typeRule">
+                        <!-- JavaScript will insert content here from css.js -->
                     </ul>
                 </section> <!-- end typography section -->
 
-                <!-- link -->
+                <!-- SECTION 5 HYPERLINKS  -->
                 <section class="rules mb-80" id="section5" data-section='section5'>
-                    <h3 id="link" class="h33 headerBottom">Hyperlinks:</h3>
-                    <div>
-                        <p class="elements-description"><span class="hand">&#9755;</span> The a tag defines a
-                            hyperlink,
-                            which is used to link from one page to another. Class for hyperlink <code>.link</code>
-                        </p>
-                        <p class="elements-description"><span class="hand">&#9755;</span> The most important
-                            attribute
-                            of the a element is the <code>href</code> attribute, which indicates the link's
-                            destination.
-                            We also have optional attribute <code>target</code>
-                        </p>
+                    <!-- description section -->
+                    <div class="section5">
+                        <h3 class="h33"></h3>
+                        <p class="elements-description"></p>
+                        <p class="elements-description"></p>
                     </div>
                     <!-- HTML Element -->
                     <div class="mtb witdh">
@@ -641,40 +615,17 @@
                         <button class="copyButton" onclick="copyCssRule('linkRule')">Copy code</button>
                     </div>
                     <ul class="rules-content mb" id="linkRule">
-                        <!-- selector -->
-                        <li><span class="selector">.link:link, </span></li>
-                        <li><span class="selector">.link:visited </span>{</li>
-                        <!-- property -->
-                        <li><span class="property">display:</span> inline-block;</li>
-                        <li><span class="property">color:</span> #e67e22;</li>
-                        <li><span class="property">text-decoration:</span> none;</li>
-                        <li><span class="property">transition:</span> all 0.3s;</li>
-                        <li><span class="property">border-bottom:</span> 2px solid transparent;</li>
-                        <!-- end selector -->
-                        <li>}</li>
-                        <li></li>
-                        <!-- selector -->
-                        <li><span class="selector">.link:hover, </span></li>
-                        <li><span class="selector">.link:active </span>{</li>
-                        <!-- property -->
-                        <li><span class="property">color:</span> #ff9f4b;</li>
-                        <li><span class="property">border-bottom:</span> 2px solid currentColor;</li>
-                        <!-- end selector -->
-                        <li>}</li>
+                        <!-- JavaScript will insert content here from css.js -->
                     </ul>
                 </section> <!-- end link section -->
 
-                <!-- list -->
+                <!-- SECTION 6 LISTS -->
                 <section class="rules mb-80" id="section6" data-section='section6'>
-                    <h3 id="list" class="h33 headerBottom">Lists:</h3>
-                    <div>
-                        <p class="elements-description"><span class="hand">&#9755;</span> Class for unordered HTML
-                            list
-                            <code>.list</code>, we also have an ordered HTML list
-                        </p>
-                        <p class="elements-description"><span class="hand">&#9755;</span> The li tag defines a list
-                            item. Class for list item <code>.list-item</code>
-                        </p>
+                    <!-- description section -->
+                    <div class="section6">
+                        <h3 class="h33"></h3>
+                        <p class="elements-description"></p>
+                        <p class="elements-description"></p>
                     </div>
                     <!-- HTML Element -->
                     <div class="mtb witdh">
@@ -700,36 +651,22 @@
                         <button class="copyButton" onclick="copyCssRule('listRule')">Copy code</button>
                     </div>
                     <ul class="rules-content mb" id="listRule">
-                        <!-- selector -->
-                        <li><span class="selector">.list </span>{</li>
-                        <!-- property -->
-                        <li><span class="property">display:</span> flex;</li>
-                        <li><span class="property">flex-direction:</span> column;</li>
-                        <li><span class="property">list-style:</span> none;</li>
-                        <li><span class="property">gap:</span> 1.6rem;</li>
-                        <!-- end selector -->
-                        <li>}</li>
-                        <li></li>
-                        <!-- selector -->
-                        <li><span class="selector">.list-item </span>{</li>
-                        <!-- property -->
-                        <li><span class="property">font-size:</span> 1.8rem;</li>
-                        <li><span class="property">display:</span> none;</li>
-                        <li><span class="property">align-items:</span> center;</li>
-                        <li><span class="property">gap:</span> 1.6rem;</li>
-                        <li><span class="property">line-height:</span> 1.2;</li>
-                        <!-- end selector -->
-                        <li>}</li>
+                        <!-- JavaScript will insert content here from css.js -->
                     </ul>
                 </section> <!-- end list section -->
 
-                <!-- buttons -->
+                <!-- SECTION 7 BUTTONS  -->
                 <section class="rules mb-80" id="section7" data-section='section7'>
-                    <h3 id="btn" class="h33 headerBottom">Buttons:</h3>
-                    <div>
-                        <p class="elements-description"><span class="hand">&#9755;</span> Class for button
-                            <code>.btn</code>
-                        </p>
+                    <!-- description section -->
+                    <div class="section7">
+                        <h3 class="h33"></h3>
+                        <p class="elements-description"></p>
+
+                        <h4 class="h44"></h4>
+                        <p class="elements-description"></p>
+
+                        <h4 class="h44"></h4>
+                        <p class="elements-description"></p>
                     </div>
                     <!-- HTML Element -->
                     <div class="mtb witdh">
@@ -759,24 +696,7 @@
                         <button class="copyButton" onclick="copyCssRule('btnRule')">Copy code</button>
                     </div>
                     <ul class="rules-content mb" id="btnRule">
-                        <!-- selector -->
-                        <li><span class="selector">.btn </span>{</li>
-                        <!-- property -->
-                        <li><span class="property">display:</span> inline-block;</li>
-                        <li><span class="property">margin:</span> 0.4rem 0;</li>
-                        <li><span class="property">padding:</span> 1.6rem 3rem 1.4rem;</li>
-                        <li><span class="property">font-size:</span> 1.2rem;</li>
-                        <li><span class="property">text-align:</span> center;</li>
-                        <li><span class="property">font-weight:</span> 500;</li>
-                        <li><span class="property">text-decoration:</span> none;</li>
-                        <li><span class="property">letter-spacing:</span> 1px;</li>
-                        <li><span class="property">text-transform:</span> uppercase;</li>
-                        <li><span class="property">border:</span> none;</li>
-                        <li><span class="property">border-radius:</span> 10px;</li>
-                        <li><span class="property">transition-duration:</span> 0.4s;</li>
-                        <li><span class="property">cursor:</span> pointer;</li>
-                        <!-- end selector -->
-                        <li>}</li>
+                        <!-- JavaScript will insert content here from css.js -->
                     </ul>
 
                     <!-- color button -->
@@ -807,26 +727,7 @@
                         <button class="copyButton" onclick="copyCssRule('btnColorRule')">Copy code</button>
                     </div>
                     <ul class="rules-content mb" id="btnColorRule">
-                        <!-- comment -->
-                        <li><span class="comment">/* color button */</span></li>
-                        <!-- selector -->
-                        <li><span class="selector">.btn-full </span>{</li>
-                        <!-- property -->
-                        <li><span class="property">background-color:</span> #555555;</li>
-                        <li><span class="property">color:</span> #fff;</li>
-                        <li><span class="property">border:</span> 1px solid transparent;</li>
-                        <!-- end selector -->
-                        <li>}</li>
-                        <!-- emty -->
-                        <li></li>
-                        <!-- selector -->
-                        <li><span class="selector">.btn-full:hover </span>{</li>
-                        <!-- property -->
-                        <li><span class="property">background-color:</span> #fff;</li>
-                        <li><span class="property">color:</span> #000;</li>
-                        <li><span class="property">border:</span> 1px solid #555555;</li>
-                        <!-- end selector -->
-                        <li>}</li>
+                        <!-- JavaScript will insert content here from css.js -->
                     </ul>
 
                     <!-- trensparent button -->
@@ -860,43 +761,19 @@
                         <button class="copyButton" onclick="copyCssRule('btnTranRule')">Copy code</button>
                     </div>
                     <ul class="rules-content mb" id="btnTranRule">
-                        <!-- comment -->
-                        <li><span class="comment">/* transparent button */</span></li>
-                        <!-- selector -->
-                        <li><span class="selector">.btn-ghost </span>{</li>
-                        <!-- property -->
-                        <li><span class="property">background-color:</span> transparent;</li>
-                        <li><span class="property">color:</span> #000;</li>
-                        <li><span class="property">border:</span> 1px solid #555555;</li>
-                        <!-- end selector -->
-                        <li>}</li>
-                        <!-- emty -->
-                        <li></li>
-                        <!-- selector -->
-                        <li><span class="selector">.btn-ghost:hover </span>{</li>
-                        <!-- property -->
-                        <li><span class="property">background-color:</span> #555555;</li>
-                        <li><span class="property">color:</span> #fff;</li>
-                        <li><span class="property">border:</span> 1px solid transparent;</li>
-                        <!-- end selector -->
-                        <li>}</li>
+                        <!-- JavaScript will insert content here from css.js -->
                     </ul>
                 </section> <!-- end buttons section -->
 
-                <!-- images -->
+                <!-- SECTION 8 IMAGES -->
                 <section class="rules mb-80" id="section8" data-section='section8'>
-                    <h3 id="img" class="h33 headerBottom">Images:</h3>
-                    <p class="elements-description"><span class="hand">&#9755;</span> The img tag has two required
-                        attributes: <code>src</code>- Specifies the path to the image, and: <code>alt </code>-
-                        Specifies
-                        an alternate text for the image, if the image for some reason cannot be displayed
-                    </p>
-                    <p class="elements-description"><span class="hand">&#9755;</span> Class for image
-                        <code>.img</code>
-                    </p>
-                    <p class="elements-description"><span class="hand">&#9755;</span> To link an image to another
-                        document, simply nest the img tag inside an a tag
-                    </p>
+                    <!-- description section -->
+                    <div class="section8">
+                        <h3 class="h33"></h3>
+                        <p class="elements-description"></p>
+                        <p class="elements-description"></p>
+                        <p class="elements-description"></p>
+                    </div>
                     <!-- HTML Element -->
                     <div class="mtb witdh">
                         <div class="rules-header">
@@ -926,15 +803,16 @@
                     </ul>
                 </section> <!-- end images section -->
 
-                <!-- icon -->
+                <!-- SECTION 9 ICONS -->
                 <section class="rules mb-80" id="section9" data-section='section9'>
-                    <h3 id="icon" class="h33 headerBottom">Icons:</h3>
-                    <!-- icon big -->
-                    <div>
-                        <h4 class="h44">Big icon</h4>
-                        <p class="elements-description"><span class="hand">&#9755;</span> Class for big icon
-                            <code>.icon-big</code>
-                        </p>
+                    <!-- description section -->
+                    <div class="section9">
+                        <h3 class="h33"></h3>
+                        <h4 class="h44"></h4>
+                        <p class="elements-description"></p>
+
+                        <h4 class="h44"></h4>
+                        <p class="elements-description"></p>
                     </div>
                     <!-- HTML Element -->
                     <div class="mtb witdh">
@@ -967,11 +845,8 @@
                     </ul>
 
                     <!-- icon small -->
-                    <div>
-                        <h4 class="h44">Small icon</h4>
-                        <p class="elements-description"><span class="hand">&#9755;</span> Class for small icon
-                            <code>.icon-small</code>
-                        </p>
+                    <div class="section9A">
+                        <!-- JavaScript will insert content here from html.js -->
                     </div>
                     <!-- HTML Element -->
                     <div class="mtb witdh">
@@ -1008,14 +883,13 @@
                 <h2 id="box-models" class="h22 box-model-color">Box models</h2>
                 <img src="img/border/border-1-row.png" class="border-1-row" alt="Border for page">
 
-                <!-- display -->
+                <!-- SECTION 10 DISPLAY -->
                 <section class="rules mb-80" id="section10" data-section='section10'>
-                    <h3 id="display" class="h33 headerBottom">Didpley:</h3>
-                    <div>
-                        <h4 class="h44">Subtitle</h4>
-                        <p class="elements-description"><span class="hand">&#9755;</span> Put a short description
-                            <code>.class or id</code>
-                        </p>
+                    <!-- description section -->
+                    <div class="section10">
+                        <h3 class="h33"></h3>
+                        <h4 class="h44"></h4>
+                        <p class="elements-description"></p>
                     </div>
                     <!-- HTML Element -->
                     <div class="mtb witdh">
@@ -1047,14 +921,13 @@
                     </ul>
                 </section> <!-- end display section -->
 
-                <!-- position -->
+                <!-- SECTION 11 POSITION  -->
                 <section class="rules mb-80" id="section11" data-section='section11'>
-                    <h3 id="position" class="h33 headerBottom">Position:</h3>
-                    <div>
-                        <h4 class="h44">Subtitle</h4>
-                        <p class="elements-description"><span class="hand">&#9755;</span> Put a short description
-                            <code>.class or id</code>
-                        </p>
+                    <!-- description section -->
+                    <div class="section11">
+                        <h3 class="h33"></h3>
+                        <h4 class="h44"></h4>
+                        <p class="elements-description"></p>
                     </div>
                     <!-- HTML Element -->
                     <div class="mtb witdh">
@@ -1086,14 +959,13 @@
                     </ul>
                 </section> <!-- end position section -->
 
-                <!-- margin -->
+                <!-- SECTION 12 MARGINS  -->
                 <section class="rules mb-80" id="section12" data-section='section12'>
-                    <h3 id="margin" class="h33 headerBottom">Margins:</h3>
-                    <div>
-                        <h4 class="h44">Subtitle</h4>
-                        <p class="elements-description"><span class="hand">&#9755;</span> Put a short description
-                            <code>.class or id</code>
-                        </p>
+                    <!-- description section -->
+                    <div class="section12">
+                        <h3 class="h33"></h3>
+                        <h4 class="h44"></h4>
+                        <p class="elements-description"></p>
                     </div>
                     <!-- HTML Element -->
                     <div class="mtb witdh">
@@ -1125,14 +997,13 @@
                     </ul>
                 </section> <!-- end margin section -->
 
-                <!-- padding -->
+                <!-- SECTION 13 PADDINGS  -->
                 <section class="rules mb-80" id="section13" data-section='section13'>
-                    <h3 id="padding" class="h33 headerBottom">Paddings:</h3>
-                    <div>
-                        <h4 class="h44">Subtitle</h4>
-                        <p class="elements-description"><span class="hand">&#9755;</span> Put a short description
-                            <code>.class or id</code>
-                        </p>
+                    <!-- description section -->
+                    <div class="section13">
+                        <h3 class="h33"></h3>
+                        <h4 class="h44"></h4>
+                        <p class="elements-description"></p>
                     </div>
                     <!-- HTML Element -->
                     <div class="mtb witdh">
@@ -1164,17 +1035,13 @@
                     </ul>
                 </section> <!-- end padding section -->
 
-                <!-- intersections -->
+                <!-- SECTION 14 INTERSECTIONS  -->
                 <section class="rules mb-80" id="section14" data-section='section14'>
-                    <h3 id="intr-sec" class="h33 headerBottom">Intersections:</h3>
-                    <div>
-                        <h4 class="h44">Subtitle</h4>
-                        <p class="elements-description"><span class="hand">&#9755;</span> It is intended to be used
-                            between
-                            sections and effects on sections with pseudo elements before <code>::before</code> and
-                            after
-                            <code>::after</code>
-                        </p>
+                    <!-- description section -->
+                    <div class="section14">
+                        <h3 class="h33"></h3>
+                        <h4 class="h44"></h4>
+                        <p class="elements-description"></p>
                     </div>
                     <!-- HTML Element -->
                     <div class="mtb witdh">
@@ -1206,14 +1073,13 @@
                     </ul>
                 </section> <!-- end intersections section -->
 
-                <!-- cursor -->
+                <!-- SECTION 15 CURSOR  -->
                 <section class="rules mb-80" id="section15" data-section='section15'>
-                    <h3 id="cursor" class="h33 headerBottom">Cursor:</h3>
-                    <div>
-                        <h4 class="h44">Subtitle</h4>
-                        <p class="elements-description"><span class="hand">&#9755;</span> Put a short description
-                            <code>.class or id</code>
-                        </p>
+                    <!-- description section -->
+                    <div class="section15">
+                        <h3 class="h33"></h3>
+                        <h4 class="h44"></h4>
+                        <p class="elements-description"></p>
                     </div>
                     <!-- HTML Element -->
                     <div class="mtb witdh">
@@ -1278,9 +1144,12 @@
 
 
     <script src="js/setting.js"></script>
+    <script src="translations.js"></script>
     <script src="js/observer.js"></script>
     <script src="js/search.js"></script>
+    <!-- <script src="js/html-copy.js"></script> -->
     <script src="js/tags.js"></script>
+    <script src="js/css.js"></script>
     <script src="js/copy.js"></script>
     <script src="js/theme.js"></script>
     <script src="js/font.js"></script>

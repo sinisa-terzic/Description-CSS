@@ -103,6 +103,10 @@
     margin-left: 3rem;
 }
 
+.propertyColor {
+    color: #fff;
+}
+
 .tag {
     color: #28dbff;
 }

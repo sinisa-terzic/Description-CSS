@@ -1,0 +1,59 @@
+.navbar,
+.languageSection {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.languageSection {
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#language {
+    display: block;
+    width: 70px;
+}
+
+#chooseLanguage {
+    align-self: flex-start;
+}
+
+#language,
+#chooseLanguage {
+    cursor: pointer;
+}
+
+.language {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+}
+
+.changeLanguageButton {
+    padding: 2px 5px;
+}
+
+.changeLanguageButton:hover {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.tag-animation {
+    transition: opacity 0.1s ease-in, transform 0.2s ease-in;
+    opacity: 0;
+    transform: translateY(30px);
+}

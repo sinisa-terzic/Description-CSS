@@ -46,6 +46,7 @@ const scrollTopButton = document.querySelector('.scrollTop');
 scrollTopButton.addEventListener('click', function () {
     scrollToSectionTop('description');
     scrollToNavbarTop('navbar');
+    removeHashFromURL(); // Call a function to remove the hash from the URL
 });
 
 
@@ -67,9 +68,13 @@ const scrollBottomButton = document.querySelector('.scrollBottom');
 scrollBottomButton.addEventListener('click', function () {
     scrollToSectionBottom('description');
     scrollToNavbarBottom('navbar');
+    removeHashFromURL(); // Call a function to remove the hash from the URL
 });
 
-
+// Function to remove the hash from the URL
+function removeHashFromURL() {
+    history.pushState("", document.title, window.location.pathname + window.location.search);
+}
 
 
 
