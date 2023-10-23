@@ -15,16 +15,33 @@ function loadTranslations(language) {
 
 
 
-function setTranslations(translations) {
-    // Primena prevoda na sav tekst na stranici
+/* function setTranslations(translations) {
     const allTextElements = document.querySelectorAll('[data-translation-key]');
     allTextElements.forEach(element => {
         const key = element.getAttribute('data-translation-key');
-        if (translations[key]) {
-            element.textContent = translations[key];
+        // Proverite da li prevod postoji u prvom objektu
+        if (translations[0][key]) {
+            element.textContent = translations[0][key];
         }
     });
+} */
+
+function setTranslations(translations) {
+    const allTextElements = document.querySelectorAll('[data-translation-key]');
+
+    // Iterirajte kroz sve objekte u nizu
+    translations.forEach(translationObj => {
+        allTextElements.forEach(element => {
+            const key = element.getAttribute('data-translation-key');
+            // Proverite da li prevod postoji u trenutnom objektu
+            if (translationObj[key]) {
+                element.textContent = translationObj[key];
+            }
+        });
+    });
 }
+
+
 
 
 

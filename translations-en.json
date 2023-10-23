@@ -1,18 +1,28 @@
-{
-    "heading": "Description of CSS usage",
-    "container": "Container",
-    "grid": "Grid",
-    "flex": "Flexbox Layout",
-    "typography": "Typography",
-    "link": "Hyperlinks",
-    "list": "Lists",
-    "button": "Buttons",
-    "image": "Images",
-    "icon": "Icons",
-    "display": "Didpley",
-    "position": "Position",
-    "margin": "Margins",
-    "padding": "Paddings:",
-    "intersection": "Intersections:",
-    "cursor": "Cursor"
-}
+[
+    {
+        "heading": "Description of CSS usage"
+    },
+    {
+        "layout": "Layout",
+        "elements": "Elements",
+        "boxModels": "Box models"
+    },
+    {
+        "heading": "Description of CSS usage",
+        "container": "Container",
+        "grid": "Grid",
+        "flex": "Flexbox Layout",
+        "typography": "Typography",
+        "link": "Hyperlinks",
+        "list": "Lists",
+        "button": "Buttons",
+        "image": "Images",
+        "icon": "Icons",
+        "display": "Didpley",
+        "position": "Position",
+        "margin": "Margins",
+        "padding": "Paddings:",
+        "intersection": "Intersections:",
+        "cursor": "Cursor"
+    }
+]

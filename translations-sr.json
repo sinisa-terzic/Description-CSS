@@ -1,18 +1,27 @@
-{
-    "heading": "Opis korištenja CSS-a",
-    "container": "Kontejner",
-    "grid": "Mreža",
-    "flex": "Fleksboks Raspored",
-    "typography": "Tipografija",
-    "link": "Hiperveze",
-    "list": "Liste",
-    "button": "Dugmad",
-    "image": "Slike",
-    "icon": "Ikone",
-    "display": "Prikaz",
-    "position": "Položaj",
-    "margin": "Margine",
-    "padding": "Obloge:",
-    "intersection": "Raskrsnice:",
-    "cursor": "Pokazivač"
-}
+[
+    {
+        "heading": "Opis korištenja CSS-a"
+    },
+    {
+        "layout": "Izgled",
+        "elements": "Elementi",
+        "boxModels": "Modeli kutija"
+    },
+    {
+        "container": "Kontejner",
+        "grid": "Mreža",
+        "flex": "Fleksboks Raspored",
+        "typography": "Tipografija",
+        "link": "Hiperveze",
+        "list": "Liste",
+        "button": "Dugmad",
+        "image": "Slike",
+        "icon": "Ikone",
+        "display": "Prikaz",
+        "position": "Položaj",
+        "margin": "Margine",
+        "padding": "Obloge:",
+        "intersection": "Raskrsnice:",
+        "cursor": "Pokazivač"
+    }
+]
