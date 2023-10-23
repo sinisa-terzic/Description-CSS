@@ -1,5 +1,8 @@
-// Početni jezik
-let currentLanguage = 'sr';
+// Proverite da li postoji sačuvani jezik u localStorage
+const savedLanguage = localStorage.getItem('selectedLanguage');
+
+// Inicijalno postavite trenutni jezik na "sr" ako nije sačuvan
+let currentLanguage = savedLanguage || 'sr';
 
 // Funkcija za učitavanje prevoda za odabrani jezik
 function loadTranslations(language) {
@@ -12,7 +15,6 @@ function loadTranslations(language) {
         })
         .catch(error => console.error('Greška pri preuzimanju prevoda:', error));
 }
-
 
 function setTranslations(translations) {
     const allTextElements = document.querySelectorAll('[data-translation-key]');
@@ -32,28 +34,6 @@ function setTranslations(translations) {
         element.innerHTML = handSpan + element.innerHTML;
     });
 }
-
-
-const languageBox = document.querySelector(".language");
-const languageText = document.getElementById("language");
-const chooseLanguage = document.getElementById("chooseLanguage");
-function toggleButtons() {
-    languageBox.classList.toggle("noneDisplay");
-}
-chooseLanguage.addEventListener("click", toggleButtons);
-languageText.addEventListener("click", toggleButtons);
-
-
-document.body.addEventListener("click", (event) => {
-    if (
-        event.target !== languageText &&
-        event.target !== chooseLanguage &&
-        event.target !== languageBox
-    ) {
-        // Hide the buttons if they are visible
-        languageBox.classList.add("noneDisplay");
-    }
-});
 
 
 // Funkcija za postavljanje teksta u zavisnosti od jezika
@@ -81,40 +61,66 @@ function setLanguageText(language) {
     }
 }
 
-
 // Pozovite funkciju da postavite početni tekst
 setLanguageText(currentLanguage);
 
+// Funkcija za promenu jezika
+const changeLanguage = (newLanguage) => {
+    currentLanguage = newLanguage;
+
+    // Sačuvajte trenutni jezik u localStorage
+    localStorage.setItem('selectedLanguage', currentLanguage);
+
+    // Ažurirajte prikaz jezika
+    setLanguageText(currentLanguage);
+
+    // Uklonite klasu za animaciju
+    tags = document.querySelectorAll('.h33, .h44, .elements-description');
+    tags.forEach(tag => {
+        tag.classList.remove("tag-animation");
+    });
+
+    // Postavite tajmer za promenu jezika nakon završetka animacije
+    setTimeout(() => {
+        // Postavite kod za promenu jezika i učitavanje prevoda
+        loadTranslations(currentLanguage);
+
+        // Uklonite klasu za animaciju i prikažite tagove
+        tags.forEach(tag => {
+            tag.classList.remove("tag-animation");
+        });
+    }, 200); // Promenite 500 na odgovarajući broj milisekundi za trajanje animacije
+};
+
+// Učitajte prevode za trenutni jezik
+loadTranslations(currentLanguage);
+
+const languageBox = document.querySelector(".language");
+const languageText = document.getElementById("language");
+const chooseLanguage = document.getElementById("chooseLanguage");
+
+function toggleButtons() {
+    languageBox.classList.toggle("noneDisplay");
+}
+
+chooseLanguage.addEventListener("click", toggleButtons);
+languageText.addEventListener("click", toggleButtons);
+
+document.body.addEventListener("click", (event) => {
+    if (
+        event.target !== languageText &&
+        event.target !== chooseLanguage &&
+        event.target !== languageBox
+    ) {
+        // Sakrijte dugmad ako su vidljiva
+        languageBox.classList.add("noneDisplay");
+    }
+});
 
 const languageButtons = document.querySelectorAll('.changeLanguageButton');
 languageButtons.forEach(button => {
     button.addEventListener('click', function () {
         const newLanguage = button.getAttribute('data-language');
-        currentLanguage = newLanguage;
-
-        // Dodaj klasu za animaciju na h3, h4 i p tagove
-        tags = document.querySelectorAll('.h33, .h44, .elements-description');
-        tags.forEach(tag => {
-            tag.classList.add("tag-animation");
-        });
-
-        // Tekst na osnovu izabranog jezika
-        setLanguageText(currentLanguage);
-
-        // Postavite tajmer za promenu jezika nakon završetka animacije
-        setTimeout(() => {
-            // Postavite kod za promenu jezika i učitavanje prevoda
-            loadTranslations(currentLanguage);
-
-            // Uklonite klasu za animaciju i prikažite tagove
-            tags.forEach(tag => {
-                tag.classList.remove("tag-animation");
-            });
-        }, 200); // Promenite 500 na odgovarajući broj milisekundi za trajanje animacije
+        changeLanguage(newLanguage);
     });
 });
-
-
-// Inicijalno učitaj prevode za trenutni jezik
-loadTranslations(currentLanguage);
-
