@@ -99,7 +99,6 @@
 .secThemeHeader {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background-color: #d6d7d9;
     padding: 1rem;
 }
