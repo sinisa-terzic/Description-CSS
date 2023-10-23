@@ -87,10 +87,10 @@ languageButtons.forEach(button => {
         currentLanguage = newLanguage;
 
         // Dodaj klasu za animaciju na h3, h4 i p tagove
-        /* tags = document.querySelectorAll('.heading, .h33, .h44, .elements-description');
+        tags = document.querySelectorAll('.h33, .h44, .elements-description');
         tags.forEach(tag => {
             tag.classList.add("tag-animation");
-        }); */
+        });
 
         // Tekst na osnovu izabranog jezika
         setLanguageText(currentLanguage);
