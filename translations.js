@@ -28,19 +28,22 @@ function loadTranslations(language) {
 
 function setTranslations(translations) {
     const allTextElements = document.querySelectorAll('[data-translation-key]');
-
+    const handSpan = '<span class="hand">&#9755;</span> ';
+    const descriptionElements = document.querySelectorAll('.elements-description');
     // Iterirajte kroz sve objekte u nizu
     translations.forEach(translationObj => {
         allTextElements.forEach(element => {
             const key = element.getAttribute('data-translation-key');
             // Proverite da li prevod postoji u trenutnom objektu
             if (translationObj[key]) {
-                element.textContent = translationObj[key];
+                element.innerHTML = translationObj[key];
             }
         });
     });
+    descriptionElements.forEach(element => {
+        element.innerHTML = handSpan + element.innerHTML;
+    });
 }
-
 
 
 

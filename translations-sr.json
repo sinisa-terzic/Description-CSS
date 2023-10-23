@@ -23,5 +23,10 @@
         "padding": "Obloge:",
         "intersection": "Raskrsnice:",
         "cursor": "Pokazivač"
+    },
+    {
+        "containerP1": "Klasa <code>.container</code> koristi se za definisanje stilova za element kontejnera",
+        "containerP2": "<code>width</code> i <code>max-width</code> postavljeni su za kontrolu širine kontejnera. <code>max-width</code> osigurava da kontejner neće premašiti određenu širinu, posebno na većim ekranima.",
+        "gridP2": "Klasa za mrežu je: <code>.grid</code>"
     }
 ]

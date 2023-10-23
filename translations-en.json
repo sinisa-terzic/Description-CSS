@@ -24,5 +24,10 @@
         "padding": "Paddings:",
         "intersection": "Intersections:",
         "cursor": "Cursor"
+    },
+    {
+        "containerP1": "The <code>.container</code> class is used to define the styles for the container element.",
+        "containerP2": "<code>width</code> and <code>max-width</code> are set to control the width of the container. <code>max-width</code> ensures that the container won't exceed a certain width, especiallyon larger screens.",
+        "gridP2": "Class for grid: <code>.grid</code>"
     }
 ]
