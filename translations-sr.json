@@ -8,13 +8,10 @@
         "boxModels": "Modeli kutija"
     },
     {
-        "container": "Kontejner",
-        "grid": "Mreža",
         "flex": "Fleksboks Raspored",
         "typography": "Tipografija",
         "link": "Hiperveze",
         "list": "Liste",
-        "button": "Dugmad",
         "image": "Slike",
         "icon": "Ikone",
         "display": "Prikaz",
@@ -25,10 +22,21 @@
         "cursor": "Pokazivač"
     },
     {
+        "container": "Kontejner",
         "containerP1": "Klasa <code>.container</code> koristi se za definisanje stilova za element kontejnera",
         "containerP2": "<code>width</code> i <code>max-width</code> postavljeni su za kontrolu širine kontejnera. <code>max-width</code> osigurava da kontejner neće premašiti određenu širinu, posebno na većim ekranima."
     },
     {
+        "grid": "Mreža",
+        "gridP1": "Klasa za mrežu je: <code>.grid</code>",
         "gridP2": "Klasa za mrežu je: <code>.grid</code>"
+    },
+    {
+        "button": "Dugmad",
+        "buttonP1": "Klasa za dugme je:<code>.btn</code>",
+        "buttonS1": "Dugme u boji",
+        "buttonP2": "Klasa za dugme u boji je:<code>.btn-full</code>",
+        "buttonS2": "Prazno dugme",
+        "buttonP3": "Klasa za prazno dugme je:<code>.btn-ghost</code>"
     }
 ]

@@ -8,9 +8,6 @@
         "boxModels": "Box models"
     },
     {
-        "heading": "Description of CSS usage",
-        "container": "Container",
-        "grid": "Grid",
         "flex": "Flexbox Layout",
         "typography": "Typography",
         "link": "Hyperlinks",
@@ -26,10 +23,20 @@
         "cursor": "Cursor"
     },
     {
+        "container": "Container",
         "containerP1": "The <code>.container</code> class is used to define the styles for the container element.",
         "containerP2": "<code>width</code> and <code>max-width</code> are set to control the width of the container. <code>max-width</code> ensures that the container won't exceed a certain width, especially on larger screens."
     },
     {
+        "grid": "Grid",
         "gridP2": "Class for grid: <code>.grid</code>"
+    },
+    {
+        "button": "Buttons",
+        "buttonP1": "Class for button:<code>.btn</code>",
+        "buttonS1": "Color button",
+        "buttonP2": "Class for color button:<code>.btn-full</code>",
+        "buttonS2": "Transparent button",
+        "buttonP3": "Class for transparent button:<code>.btn-ghost</code>"
     }
 ]
