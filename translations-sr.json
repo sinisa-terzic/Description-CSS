@@ -28,7 +28,7 @@
     },
     {
         "grid": "Mreža",
-        "gridP1": "Klasa za mrežu je: <code>.grid</code>",
+        "gridP1": "CSS Grid Layout Module nudi sistem rasporeda zasnovan na mreži, sa redovima i kolonama, što olakšava dizajniranje veb stranica bez upotrebe plutajućih i pozicioniranih.",
         "gridP2": "Klasa za mrežu je: <code>.grid</code>"
     },
     {
